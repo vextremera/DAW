@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llibreria</title>
+    <script defer src="../js/exercici4.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            display: inline-block;
+        }
+
+        #llibresDiv div p {
+            color: #000000;
+            display: block;
+            font-weight: 400;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Afegeix el ISBN</p>
+    <input type="number" id="ISBN">
+
+    <p>Escriu el títol</p>
+    <input type="text" id="titol">
+
+    <p>Digues l'autor</p>
+    <input type="text" id="autor">
+
+    <p>Selecciona la temàtica</p>
+    <select id="tematica">
+        <option value="fiction">Ficció</option>
+        <option value="drama">Drama</option>
+        <option value="comedia">Comedia</option>
+    </select>
+
+    <br>
+    <p>De que va el llibre?</p>
+    <input type="text" id="resum">
+
+    <br>
+    <button onclick="afegirLlibre()">Afegir llibre</button>
+    <button onclick="mostrarLlibres()">Mostrar llibres</button>
+
+    <br><br>
+    <p>Filtrar llibres per temàtica</p>
+    <select id="filtreTematica" onchange="filtrarPerTematica()">
+        <option value="tots">Tots</option>
+        <option value="fiction">Ficció</option>
+        <option value="drama">Drama</option>
+        <option value="comedia">Comedia</option>
+    </select>
+
+    <div id="titolsLlibres"></div>
+
+    <div id="llibresDiv"></div>
+</body>
+</html>

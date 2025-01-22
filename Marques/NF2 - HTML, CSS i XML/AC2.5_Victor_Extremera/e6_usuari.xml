@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<usuari>
+    <nom_usuari>maria</nom_usuari>
+    <contrasenya>password123</contrasenya>
+    <uid>1001</uid>
+    <gid>1001</gid>
+    <info>Informació de Maria</info>
+    <directori_inici>/home/maria</directori_inici>
+    <shell>/bin/bash</shell>
+</usuari>

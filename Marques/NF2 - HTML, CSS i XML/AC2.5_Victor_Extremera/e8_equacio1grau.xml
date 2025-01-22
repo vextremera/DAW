@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<equacio_1grau>
+    <formula>ax + b = 0</formula>
+    <resolucio>x = -b/a</resolucio>
+    <variables>
+        <variable nom="a" descripcio="Coeficient de x"/>
+        <variable nom="b" descripcio="Term constant"/>
+    </variables>
+</equacio_1grau>

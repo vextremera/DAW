@@ -1,0 +1,407 @@
+<!DOCTYPE html> <!-- indicoel tipo de documento (html) -->
+<html lang="es"> <!-- abro la raiz del documento entero -->
+    <head> <!-- la etiqueta head, va generalmente antes del body, y representa metadatos, normalmente -->
+        <title>TAULA - Marques</title> <!-- establece el titulo de la pestaña en el navegador -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Añado la fuente de la letra que quiero utilizar -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            html, body { /* afecta a html y a body */
+                margin: 0;
+                padding: 0;
+                /* formateo simple de la letra general de la pàgina */
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                overflow: auto;
+            }
+
+            .snap-container {
+                height: 100vh;
+                overflow: auto;
+                scroll-snap-type: y mandatory;
+            }
+
+            .snap-section {
+                scroll-snap-align: start;
+                min-height: 80vh;  
+            }
+
+            #present {
+                display: block;
+                justify-content: center;
+                align-content: center;
+                margin-bottom: 5ch;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            h1, h2{
+                font: inherit;
+            }
+            
+            h1 {
+                text-align: center;
+                font-weight: 800;
+                font-size: 40px;
+                margin-bottom: 0px;
+            }
+
+            h2 {
+                text-align: center;
+                font-weight: 900;
+                font-size: 60px;
+                letter-spacing: 10px;
+                margin: 5px 0 0 0;
+            }
+
+            p{
+                text-align: center;
+                line-height: 3ch;
+                width: 80ch;
+            }
+
+
+            #present span{
+                font-weight: 700;
+            }
+
+            #image{
+                display: flex; 
+                width: 100%; 
+                /* height: 50ch;  */
+                justify-content: center;
+                height: 45ch;
+                overflow: hidden;
+            }
+
+            img{
+                display: block;
+                transform: scale(1.1);
+            }
+
+            /* #image > img{
+                width: 100%;
+                height: 40ch;
+                object-fit: none;
+                background-color: black;
+                border: 3px solid #ff9daa;
+            } */
+
+            .separador {
+                padding: 0.4ch;
+            }
+
+            .separador2 {
+                padding: 4ch;
+            }
+
+            .scrollable {
+                overflow-y: scroll; /* Habilita el scroll vertical */
+            }
+
+            #tabla { /* afecta a la etiqueta que tenga el identificador como 'tabla', solo puede haber una */
+                display: flex;
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                margin-top: 5ch;
+            }
+
+            table {
+                display: block;
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 2px solid #848484;
+                text-align: center;
+                padding: 13px 20px;
+                overflow: hidden;   /* no se dibujan barras */
+                white-space: nowrap;    /* evita que el texto se divida en multiples lineas */
+                text-overflow: ellipsis;    /* muestra '...' cuando el texto es demasiado largo */
+            }
+
+            td:first-child{     /* afecta a todos los primeros <td> dentro de un elemento */
+                font-weight: 780;
+                border-top: 2px solid #ddd;
+                border-bottom: transparent;
+                border-left: transparent;
+            }
+
+            tr:first-child td {     /* afecta a todos los <td> dentro del primer <tr> */
+                font-weight: 900;
+                font-size: 16px;
+                letter-spacing: 7px;
+                text-transform: uppercase;  /* transforma el texto que contenga a MAYUSCULAS */
+                border-right: 2px solid #ddd;
+                border-top: transparent;
+                border-left: transparent;
+            }
+            
+            tr:nth-child(1), tr:nth-child(4), tr:nth-child(7) { /* afecta a las filas 1, 4 y 7 (los dias de la semana y los dos descansos) */
+                height: 30px;
+            }
+
+            tr:not(:nth-child(1)):not(:nth-child(4)):not(:nth-child(7)) { /* afecta a todos las filas que no sean la primera, cuarta o septima (todas las filas con asignaturas) */
+                height: 100px;
+            }
+
+            table span { /* afecta todo el contenido dentro de las etiquetas <span> 'CONTENIDO' </span> que estan dentro de la etiqueta <table>*/
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .descans { /* afecta a todas las etiquetas con la clase definida 'descans' */
+                font-weight: 900;
+                text-transform: uppercase;
+                letter-spacing: 20px;
+                font-size: 18px;
+                border-left: transparent;
+                border-right: transparent;
+            }
+
+            tr:nth-child(1) td:last-child { /* afecta al ultimo <td> de la primera fila */
+                border-right: transparent;
+            }
+
+            tr:nth-child(7) td{ /* afecta a todos los td de la septima fila (el segon descans) */
+                border-bottom: transparent;
+            }
+
+            /* afecta a el segundo, tercer, quinto y sexto <td> del ultimo <tr> (los recuadros en 'blanco') */
+            tr:last-child td:nth-child(2),
+            tr:last-child td:nth-child(3),
+            tr:last-child td:nth-child(5),
+            tr:last-child td:nth-child(6) {
+                border: 2px dashed #ddd;
+                border-bottom: transparent;
+                border-top: 2px solid #ddd;
+            }
+
+            tr:last-child td:nth-child(4){ /* afecta al cuarto <td> del ultimo <tr> (l'hora de marques de les 13:00 - 14:00) */
+                border-top: transparent;
+                border: 2px solid #53535395;
+                z-index: 100;
+            }
+
+            tr:last-child td:last-child{
+                border-right: transparent;
+            }
+
+            .professorat, .assignatures, .as-prof {
+                display: block;
+                width: 100%;
+                font-size: 45px;
+                font-weight: 800;
+                height: auto;
+                padding-top: 60px;
+            }
+
+            #profes, #assignatures, #as-prof {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin: 0;
+            }
+
+            ul {
+                display: block;
+                list-style: none;
+                margin: 1ch 0 0 0 ;
+            }
+
+            ul li {
+                position: static;
+                font-weight: 740;
+                font-size: 26px;
+                padding: 16px 8px;
+                margin: 0;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+
+            ol {
+                display: block;
+                list-style: none;
+                margin: 1ch 0 0 0 ;
+            }
+
+            ul li:hover {
+                font-size: 28px;
+                font-weight: 780;
+            }
+
+            ol li {
+                position: static;
+                font-weight: 740;
+                font-size: 26px;
+                padding: 16px 8px;
+                margin: 0;
+                text-align: center;
+                letter-spacing: 4px;
+            }
+            ol li:hover {
+                font-size: 28px;
+                font-weight: 780;
+            }
+
+            #as-prof ul li {
+                font-weight: 600;
+            }
+
+            #as-prof span {
+                font-weight: 800;
+            }
+
+            @media screen and (max-width:1800px){
+                #image {
+                    margin-top: -20px;
+                    scale: 90%;
+                }
+
+                table{
+                    margin-top: -5ch;
+                    scale: 90%;
+                    height: fit-content;
+                } 
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="snap-container">
+                <div class="snap-section">
+                        <a href="https://www.sapalomera.cat/" ><img alt="sapalomera" style="position: absolute; height: 60px; width: 120px;" src="https://www.sapalomera.cat/wp-content/themes/SaPalomeraTheme/img/logo-institut-sapalomera.png" /></a>
+                    <div class="present">
+                        <section>
+                            <h1>M04 - MARQUES</h1>
+                            <h2>TAULES I LLISTES</h2>
+                            <div style="width: 100%; display: flex; justify-content: center;">
+                                <p>Aquesta és una <span>pàgina web</span> on mostro <i>el meu horari</i> en una taula <span>programat en html i css</span> integrat en el mateix document, amb <u>files i columnes, rowspans, colspans, etc</u>. També es mostren <span>les llistes</span> i els seus <u>atributs, modificadors...</u></p>
+                            </div>
+                        </section>
+                        <div id="image">
+                            <img alt="html-css" src="https://nautalis.net/extras/imagenes/2023/nautalis.es.vKUsfNybwu32XPJYmk8fjRCe6lUAURnxrqWmDDjb5PBvXSxcfs.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="snap-section">
+                    <div class="separador"></div>
+                    <div id="tabla">
+                        <table> <!-- abro la etiqueta de table para hacer una-->
+                            <tr> <!-- cada tr representa una nueva fila en la tabla -->
+                                <td></td> <!-- cada td dentro de un tr representa una celda de una columna-->
+                                <td>Dilluns</td> <!-- se podrian usar th para algunas de estas celdas, como encabezados de tabla, etc. pero no es necesario -->
+                                <td>Dimarts</td> <!-- lo mismo pasa con tbody, se podria usar, pero no es necesario -->
+                                <td>Dimecres</td>
+                                <td>Dijous</td>
+                                <td>Divendres</td>
+                            </tr>
+                            <tr>
+                                <td style="line-height: 2;">8:15<br>9:15</td>
+                                <td style="background-color: #b9fdbc90; line-height: 1.5;"><span>Accés a dades</span><br>Pere Sánchez<br>Aula DAW 1</td> <!-- backgrounf-color da color al fondo a traves de un codigo especifico y unico par cada color -->
+                                <td style="background-color: #fc9a9a90; line-height: 1.5;"><span>M11-Anglès</span><br>Cristina Soler<br>Aula DAW 1</td> <!-- con <br> se ejecuta un salto de linia en el texto -->
+                                <td style="background-color: #fc9a9a90; line-height: 1.5;"><span>M11-Anglès</span><br>Cristina Soler<br>Aula DAW 1</td> <!-- <span> se usa como un span de texto para señalar algo de mayor importancia, o señalizar algo en concreto -->
+                                <td style="background-color: #a1fff490; line-height: 1.5;"><span>M04-Marques</span><br>Àngel Bosch<br>Aula DAW 1</td>
+                                <td style="background-color: #b9fdbc90; line-height: 1.5;"><span>Accés a dades</span><br>Pere Sánchez<br>Aula DAW 1</td>
+                            </tr>
+                            <tr>
+                                <td style="line-height: 2;">9:15<br>10:15</td>
+                                <td style="background-color: #7ecbff90; line-height: 1.5;"><span>M01-Sistemes</span><br>Ricard Pla<br>Pere Sánchez<br>Aula DAW 1</td>
+                                <td style="background-color: #7ecbff90; line-height: 1.5;"><span>M01-Sistemes</span><br>Ricard Pla<br>Pere Sánchez<br>Aula DAW 1 </td>
+                                <td style="background-color: #cd7cf390; line-height: 1.5;"><span>Sostenibilitat</span><br>Montse Bermúdez<br>Aula DAW 1</td>
+                                <td style="background-color: #7ecbff90; line-height: 1.5;"><span>M01-Sistemes</span><br>Ricard Pla<br>Pere Sánchez<br>Aula DAW 1</td>
+                                <td style="background-color: #fa99ff90;"><span>M03-Programació</span><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+                            </tr>
+                            <tr>
+                                <td class="descans"></td>
+                                <td class="descans" colspan="5">Descans</td>
+                            </tr>
+                            <tr>
+                                <td style="line-height: 2;">10:40<br>11:40</td>
+                                <td rowspan="2" style="background-color: #fa99ff90; line-height: 1.8;"><span>M03-Programació</span><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+                                <td rowspan="2" style="background-color: #fa99ff90; line-height: 1.8;"><span>M03-Programació</span><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+                                <td rowspan="2" style="background-color: #fef16290; line-height: 1.8;"><span>M02-Bases Dades</span><br>Robert Ventura<br>Adrián Saborido<br>Aula DAW 1</td>
+                                <td rowspan="2" style="background-color: #fef16290; line-height: 1.8;"><span>M02-Bases Dades</span><br>Robert Ventura<br>Adrián Saborido<br>Aula DAW 1</td>
+                                <td style="background-color: #fa99ff90;"><span>M03-Programació</span><br>Pere Sánchez<br>Xavier Martín<br>Aula DAW 1<br>Aula A0</td>
+                            </tr>
+                            <tr>
+                                <td style="line-height: 2;">11:40<br>12:40</td>
+                                <td style="background-color: #ffd04290; line-height: 1.8;"><span>Tutoria</span><br>Robert Ventura<br>Aula DAW 1</td>
+                            </tr>
+                            <tr>
+                                <td class="descans"></td>
+                                <td class="descans" colspan="5">Descans</td>
+                            </tr>
+                            <tr>
+                                <td style="line-height: 2;">13:00<br>14:00</td>
+                                <td></td> <!-- celdas vacias -->
+                                <td></td>
+                                <td style="background-color: #a1fff490; line-height: 1.3;"><span>M04-Marques</span><br>Àngel Bosch<br>Robert Ventura<br>Aula DAW 1</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="snap-section">
+                    <div id="professorat">
+                        <h1 class="professorat">PROFESSORAT</h1>
+                        <div id="profes">
+                            <ul>
+                                <li>Pere Sánchez</li>
+                                <li>Cristina Soler</li>
+                                <li>Àngel Bosch</li>
+                                <li>Ricard Pla</li>
+                                <li>Montse Bermúdez</li>
+                                <li>Xavier Martín</li>
+                                <li>Robert Ventura</li>
+                                <li>Adrián Saborido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="separador2"></div>
+                <div class="snap-section">
+                    <h1 class="assignatures">ASSIGNATURES</h1>
+                    <div id="assignatures">
+                        <ol>
+                            <li>ACCÉS A DADES</li>
+                            <li>ANGLÈS</li>
+                            <li>MARQUES</li>
+                            <li>SISTEMES</li>
+                            <li>SOSTENIBILITAT</li>
+                            <li>PROGRAMACIÓ</li>
+                            <li>BASES DADES</li>
+                            <li>TUTORIA</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="separador2"></div>
+                <div class="snap-section">
+                    <h1 class="as-prof">PROFESSORS - ASSIGNATURES</h1>
+                    <div id="as-prof">
+                        <ul>
+                            <li><span>Pere Sánchez</span> - ACCÉS A DADES / PROGRAMACIÓ</li>
+                            <li><span>Cristina Soler</span> - ANGLÈS</li>
+                            <li><span>Àngel Bosch</span> - MARQUES</li>
+                            <li><span>Ricard Pla</span> - SISTEMES</li>
+                            <li><span>Montse Bermúdez</span> - SOSTENIBILITAT</li>
+                            <li><span>Xavier Martín</span> - PROGRAMACIÓ</li>
+                            <li><span>Robert Ventura</span> - TUTORIA / BASES DADES</li>
+                            <li><span>Adrián Saborido</span> - BASES DADES</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="separador2"></div>
+            </div>
+        </div>
+    </body>
+</html>

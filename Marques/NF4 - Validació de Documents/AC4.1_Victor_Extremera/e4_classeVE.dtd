@@ -1,0 +1,5 @@
+<!ELEMENT classe  (alumne+)>
+<!ELEMENT alumne   (nif, nom, cognom+)>
+<!ELEMENT nif       (#PCDATA)>
+<!ELEMENT nom       (#PCDATA)>
+<!ELEMENT cognom    (#PCDATA)>

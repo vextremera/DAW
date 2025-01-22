@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca>
+    <llibre category="infantil">
+        <nom lang="es">Pepa Pig</nom>
+        <autor>Quique Perez</autor>
+        <any_publicacio>2007</any_publicacio>
+        <preu>19.50</preu>
+    </llibre>
+    <llibre category="historia">
+        <nom lang="es">Caperucita</nom>
+        <autor>Jimena Jijon</autor>
+        <any_publicacio>1998</any_publicacio>
+        <preu>14.90</preu>
+    </llibre>
+    <llibre category="autoayuda">
+        <nom lang="es">Pepa Pig</nom>
+        <autor>Quique Perez</autor>
+        <any_publicacio>2004</any_publicacio>
+        <preu>8.70</preu>
+    </llibre>
+    <llibre>
+        <nom lang="es">Principito</nom>
+        <autor>Quique Perez</autor>
+        <any_publicacio>2015</any_publicacio>
+        <preu>11.45</preu>
+    </llibre>
+</biblioteca>

@@ -1,0 +1,310 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-color: #222222;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* la posiió fixed fa que es quedi aquest element estàtic a la pàgina sense importar on et moguis (sempre el veuràs)*/
+    z-index: 5;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0 0 0 2vw;
+    padding: 0;
+    display: flex; /* flex permet distribuir el contingut molt millor */
+    justify-content: flex-start;
+    transition: ease 1s;
+}
+
+.menu li {
+    display: inline; /* fa actuar l'element com apilables un al costat de l'altre */
+    margin-right: 20px;
+    transition: ease 1s;
+}
+
+.menu li a {
+    text-decoration: none; /* els <a> per defecte tenen subratllat i color blau després del clic, none s'ho treu */
+    letter-spacing: 2px;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase; /* independentment de com estigui escrit a l'html, això o fa majúscula */
+    transition: ease 1s;
+}
+
+.menu li a:hover {
+    background-color: rgb(123, 123, 123);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.slide {
+    display: flex; 
+    width: 100%; 
+    justify-content: center;
+    height: 60vh;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/slide.jpg");
+    background-size: cover; /* linear gradient l'utilitzo per cambiar l'opacitat de l'imatge i que s'assembli més a l'exemple */
+    background-position: center;
+    background-attachment: fixed; /* fixed fa que l'imatge no fagi "scroll" amb la resta de la pàgina, m'agrada l'efecte */
+    height: 100vh; /* l'unitat vh actua com unitats de la propia pàgina, 100 unitats son totes les que es veuen default. Per tant actua com un widht 100%, però a height. el problema seria que height no accepta aquest percentatge perque la pa`gina es realment més alta perquè hi ha scroll */
+}
+
+#girona, #poblacio, #galeria { /* com el header és fixa, al redirigirse a un apartat amb els links es queda abaix, i no es veu el titol */
+    /* he pensat en fer uns div al principi de cada apartat */
+    margin-top: -60px; /* i he mogut aquests divs cap adalt, amb margin-top negatiu */
+    margin-bottom: 100px; /* després els contigut després d'aixó es posava inmediatament seguint el div, i es superposaven els continguts */
+} /*llavors he fet el amrgin negatiu i un margin bottom, per retornar el contingut real al seu lloc */
+/*aquest css llavors és perquè es mostri el contingut correctament si navegas per la web amb el header. */
+
+.content {
+    margin: 5px 60px;
+    display: flex;
+    /* padding-top: 20px; */
+}
+
+.girona-h2 { /* clase pel titol h2 que hi ha a Girona */
+    font-weight: 800;
+    font-size: 28px;
+    padding: 10px 30px;
+    background-color: #ebebeb;
+}
+
+.girona {
+    width: 60%; /* gestiono l'espai amb width 60% i després al widget 35% perque m'agrada més que inline-block (el resultat és semblant) */
+}
+
+.widget {
+    width: 35%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; /* distribueix els elements que hi ha hagi dintre del flex, un sota l'altre */
+    align-items: center;
+    justify-content: center; /* centra el contingut */
+}
+
+.widget-element {
+    background-color: #222222;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 290px;
+    margin: 20px 0 0 0;
+    text-decoration: none;
+    transition: ease 2s; /* transició que afecta al efecte :hover, no es posa al mateix :hover perquè sino, no faria la transició de sortida, només la d'entrada. */
+}
+
+.widget-element:hover { /* aplica aquests estils quan el ratolí esta a sobre de l'element */
+    transform: scale(1.1); /* utilitzo l'scale com recurs visual al posar el ratolí a sobre de l'element */
+}
+
+.widget-h2 {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: right;
+    margin: 10px 10px 0 0;
+    padding: 10px 20px 0 20px;
+}
+
+.widget-element p { /* afecta al <p> dintre dels .widget-elements */
+    text-align: right;
+    font-size: 18px;
+    padding: 5px 10px;
+    max-width: 270px;
+    margin: 0 10px 0 0;
+}
+
+.table-container {
+    width: 92%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table-container h2 {
+    font-weight: 800;
+    font-size: 28px;
+    padding: 10px 30px;
+    background-color: #ebebeb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #ebebeb;
+    color: black;
+    padding: 8px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 17px;
+    text-transform: capitalize; /* Les primeres lletres les farà majúscules */
+}
+
+td:first-child { /* aquest aplicarà al primer td de cada lloc*/
+    text-align: left;
+}
+
+tr:nth-child(even) { /* aquest a tots els tr parells */
+    background-color: #f9f9f9;
+}
+
+.gallery-container {
+    width: 92%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.gallery-container h2 {
+    font-weight: 800;
+    font-size: 28px;
+    padding: 10px 30px;
+    background-color: #ebebeb;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; /* gap gestiona los espacios entre elementos grid, en ralación fila-columna */
+    margin-top: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 25vh;
+    aspect-ratio: 1; /* manté la posició amb totes les celdes */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p:hover{
+    transform: scale(1.05);
+}
+
+.gallery-item:nth-child(9) img {
+    opacity: 12%; /*canvia l'opacitat */
+}
+
+.gallery-item:nth-child(9) p {
+    position: absolute;
+    top: 40%; /* centra el text del p */
+    left: 50%; /* centra el text del p */
+    transform: translate(-50%, -50%); /* centra el text del p */
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 100%;
+}
+
+.footer {
+    background-color: #222222;
+    padding: 15px 0;
+    width: 100%; 
+    bottom: 0;  
+    z-index: 5; /* el posa devant de la resta que tingui z-index menor */
+    text-align: center; 
+    display: flex;
+    flex-direction: row; /*distribueix el contingut un al costat de l'altre */
+    justify-content: space-around; /* distribuint-lo per tot l'espai disponible */
+}
+
+.footer p {
+    color: white; 
+    margin: 5px 0; 
+    font-weight: 700; 
+    letter-spacing: 1px;
+    transition: ease 0.3s;
+}
+
+.footer p:hover {
+    transform: scale(1.1);
+}
+
+/* estils responsive quan la pantalla té menys de 920px de width, afecta al manu de navegació i al widget */
+@media (max-width: 920px) {
+
+
+    /* fa el header per a movils */
+    .header {
+        position: relative;
+    }
+
+    .menu {
+        flex-direction: column; /* canvia el menu a columna en comptes de fila */
+        align-items: flex-start;
+        background-color: #222222;
+        padding-left: 10px;
+        margin-right: 20px;
+    }
+    
+    .menu li {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 15vh;
+    }
+
+    .menu li a {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /* fa que el widget QUE FA, COM ARRIBAR, es posi abaix del contetn de Girona */
+    .content {
+        flex-direction: column; /* canvia el layout a columna */
+    }
+
+    .girona {
+        width: 100%; /* el div Girona ocupa el 100% del width */
+    }
+
+    .widget {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .widget-element {
+        width: 80%;
+
+    }
+
+    .widget-h2, .widget-element p {
+        text-align: center;
+    }
+}

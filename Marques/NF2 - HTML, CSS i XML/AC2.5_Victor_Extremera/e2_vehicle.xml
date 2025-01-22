@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vehicle>
+    <marca>Ford</marca>
+    <model>Focus</model>
+    <variant>1.6 TDCi</variant>
+    <matricula>1234ABC</matricula>
+    <any_matriculacio>2018</any_matriculacio>
+</vehicle>

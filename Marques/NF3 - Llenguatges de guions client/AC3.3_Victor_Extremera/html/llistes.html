@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llistes</title>
+    <link rel="stylesheet" href="../css/llistes.css"></link>
+    <script defer src="../js/llistes.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-ul">
+                <li><a href="../index.html">Inici</a></li>
+                <li><a href="llistes.html">Llistes</a></li>
+                <li><a href="operadors.html">Operadors</a></li>
+                <li><a href="condicionals.html">Condicionals</a></li>
+                <li><a href="bucles.html">Bucles</a></li>
+                <li><a href="arrays.html">Arrays</a></li>
+                <li><a href="funcions.html">Funcions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Gestió de Llistes</h1>
+
+    <div class="seccions">
+        <div class="seccio" id="llista-ordenada">
+            <h2>Llistes Ordenades</h2>
+            <div class="clip">
+                <input type="text" id="text-ordenada" placeholder="Afegeix un element">
+                <div class="buttons">
+                    <button onclick="afegeixOrdenada()">Afegeix</button>
+                    <button onclick="eliminaOrdenada()">Elimina últim</button>
+                    <button onclick="netejarOrdenada()" class="netejar">Netejar</button>
+                </div>
+                <ol id="ordenada"></ol>
+            </div>
+        </div>
+
+        <div class="seccio" id="llista-desordenada">
+            <h2>Llistes Desordenades</h2>
+            <div class="clip">
+                <input type="text" id="text-desordenada" placeholder="Afegeix un element">
+                <div class="buttons">
+                    <button onclick="afegeixDesordenada()">Afegeix</button>
+                    <button onclick="eliminaDesordenada()">Elimina últim</button>
+                    <button onclick="netejarDesordenada()" class="netejar">Netejar</button>
+                </div>
+                <ul id="desordenada"></ul>
+            </div>
+        </div>
+
+        <div class="seccio" id="llista-descriptiva">
+            <h2>Llistes Descriptives</h2>
+            <div class="clip">
+                <input type="text" id="titol-descriptiva" placeholder="Títol">
+                <input type="text" id="descripcio-descriptiva" placeholder="Descripció">
+                <div class="buttons">
+                    <button onclick="afegeixDescriptiva()">Afegeix</button>
+                    <button onclick="eliminaDescriptiva()">Elimina últim</button>
+                    <button onclick="netejarDescriptiva()" class="netejar">Netejar</button>
+                </div>
+                <dl id="descriptiva"></dl>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

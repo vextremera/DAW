@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AC2.2 Victor Extremera</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            html, body { /* afecta a html y a body */
+                margin: 0;
+                padding: 0;
+                /* formateo simple de la letra general de la pàgina */
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                overflow: auto;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                scale: 0.5;
+            }
+
+            h1 {
+                margin-top: -3vh;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                line-height: 2.5;
+                margin-bottom: 5vh;
+            }
+            #table {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 80%;
+                margin-bottom: 5vh;
+            }
+            
+            td {
+                width: 25%;
+                height: 4vh;
+                border: 2px solid black;
+            }
+
+            textarea {
+                width: 99%;
+                height: 10vh;
+                resize: none;
+                margin: 2px;
+            }
+
+            .input-text, .input-select{
+                height: 80%;
+                width: 95%;
+            }
+
+            .check, .video-check {
+                scale: 160%;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+
+            .iframe {
+                height: 315px;
+                width: 98%;
+                margin: 5px;
+            }
+
+            .video-check {
+                cursor: pointer;
+                margin-left: 50%;
+            }
+
+            button {
+                width: 30%;
+                height: 50px;
+                margin: 10px 10px 10px 35%;
+                border: 2px solid black;
+            }
+
+            button:hover {
+                cursor: pointer;
+                scale: 1.03;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.sapalomera.cat/" target="_blank"><img alt="sapalomera" src="https://www.sapalomera.cat/wp-content/themes/SaPalomeraTheme/img/logo-institut-sapalomera.png"></a>
+        <h1>AC2.2 pràctica HTML - Formularis</h1>
+        <p>2.1 Identifica i classifica els llenguatges de marques relacionats amb la web i les seves diferents versions.
+            <br>2.2 Analitza l’estructura d’un document HTML (llenguatge d’etiquetatge d’hipertext) i identifica les seccions que el componen.
+            <br>2.3 Reconeix la funcionalitat de les principals etiquetes i atributs del llenguatge HTML.
+            <br>2.5 Utilitza eines per crear documents web..
+            </p>
+        <div id="table">
+            <table>
+                <tr>
+                    <td colspan="1" style="background-color: #eeeeee;">Cognoms, Nom</td>
+                    <td colspan="3"><input type="text" class="input-text" placeholder="Gomez, Pepe"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Email</td>
+                    <td><input type="email" class="input-text" placeholder="exemple@gmail.com"></td>
+                    <td style="background-color: #eeeeee;">Telèfon</td>
+                    <td><input type="tel" class="input-text" placeholder="600 00 00 00"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Aficions</td>
+                    <td>
+                        <select class="input-select">
+                            <option>Hobbies</option>
+                            <option>Esports</option>
+                            <option>Llegir</option>
+                            <option>Videojocs</option>
+                            <option>Cuina</option>
+                            <option>Escriure</option>
+                            <option>Viatjar</option>
+                            <option>Otro...</option>
+                        </select>
+                    </td>
+                    <td style="background-color: #eeeeee;">Esports</td>
+                    <td>
+                        <select class="input-select">
+                            <option>Esports</option>
+                            <option>Fútbol</option>
+                            <option>Bàsquet</option>
+                            <option>Hoquei</option>
+                            <option>Voley</option>
+                            <option>Tenis</option>
+                            <option>Padel</option>
+                            <option>Atletisme</option>
+                            <option>Gimnàs</option>
+                            <option>Otro...</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Practíques les aficions?</td>
+                    <td><input type="checkbox" class="check" checked></td>
+                    <td style="background-color: #eeeeee;">Fas aquest esport?</td>
+                    <td><input type="checkbox" class="check"></td>
+                </tr>
+                <tr>
+                    <td style="background-color: #eeeeee;">Quant de temps hi dediques?</td>
+                    <td>
+                        <select class="input-select">
+                            <option>Hores</option>
+                            <option>- 1h</option>
+                            <option>2-4h</option>
+                            <option>4-8h</option>
+                            <option>+ 8h</option>
+                        </select>
+                    </td>
+                    <td style="background-color: #eeeeee;">Mires aquest esport?</td>
+                    <td><input type="checkbox" class="check"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="background-color: #eeeeee;">Observacions</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="background-color: #eeeeee;">Escull un vídeo</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><iframe class="iframe" src="https://www.youtube.com/embed/iILFBGm_I9M?si=dxPSreOsUfFD8jrc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                    <td colspan="2"><iframe class="iframe" src="https://www.youtube.com/embed/I5kj-YsmWjM?si=ltzvLnml8CpGe268" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" class="video-check" name="video"></td>
+                    <td colspan="2"><input type="radio" class="video-check" name="video"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="background-color: #eeeeee;">Clica el botó per finalitzar el questionari</td>
+                    <td><button><b>Envia</b></button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

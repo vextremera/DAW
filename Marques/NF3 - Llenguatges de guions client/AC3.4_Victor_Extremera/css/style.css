@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-content {
+    margin: 5vh 30% 5vh 30%;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    /* box shadow down right */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#form-content div {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 600;
+    /* background-color: rgb(255, 197, 245); */
+    display: block;
+    padding: 6px;
+}
+
+label span {
+    color: red;
+}
+
+#div-sexe label {
+    display: inline-block;
+}
+
+#div-sexe div {
+    margin-left: 1vw;
+    margin-bottom: 0;
+}
+
+#div-sexe div label {
+    width: 30%;
+    margin: 5px 0;
+}
+
+#div-sexe input[type="radio"] {
+    scale: 1.2;
+    position: relative;
+}
+
+input {
+    display: block;
+    padding: 8px;
+    margin: 2px 0 0 0;
+    width: 95%;
+    border-radius: 5px;
+    border: 2px solid #9f9f9f;
+    background-color: rgb(243, 243, 243);
+}
+
+input:focus {
+    background-color: #e4e4e4;
+}
+
+input::placeholder {
+    color: #cbcbcb;
+}
+
+input[type="radio"] {
+    display: initial;
+    padding: initial;
+    margin: initial;
+    width: initial;
+    border-radius: initial;
+    border: initial;
+    background-color: initial;
+    cursor: pointer;
+}
+
+#div-data-naixement select{
+    padding: 8px;
+    margin: 2px 0 0 0;
+    width: 32.5%;
+    border-radius: 5px;
+    border: 2px solid #9f9f9f;
+    background-color: rgb(243, 243, 243);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: crosshair; 
+}
+
+#div-data-naixement select:focus{
+    background-color: #e4e4e4;
+}
+
+#div-submit {
+    display: flex;
+    justify-content: center;
+}
+
+#button-submit, #button-neteja {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #9f9f9f;
+    font-weight: bolder;
+    font-size: 17px;
+    cursor: wait;
+    margin: 10px 0 0 0;
+}
+
+#button-submit {
+    background-color: #91ffc2;
+    margin-right: 10px;
+}
+
+#button-neteja {
+    background-color: #ff9191;
+    margin-left: 20px
+}
+
+#repetir_contrasenya, #contrasenya {
+    display: inline-block;
+    width: 89%;
+}
+
+#toggle_repetir_contrasenya, #toggle_contrasenya {
+    display: inline;
+    border: none;
+    height: 25px;
+    width: 34px;
+    padding: 0;
+    scale: 0.7;
+}
+
+#toggle_repetir_contrasenya img, #toggle_contrasenya img {
+    height: 30px;
+    width: 34px;
+    margin-bottom: -10px;
+    padding: 0;
+}

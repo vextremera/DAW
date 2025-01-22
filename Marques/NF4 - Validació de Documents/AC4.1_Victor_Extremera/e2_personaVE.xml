@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE persones [
+
+<!ELEMENT persones  (persona+)>
+<!ELEMENT persona   (nif, nom, cognom+, telefon+, sexe?)>
+<!ELEMENT nif       (#PCDATA)>
+<!ELEMENT nom       (#PCDATA)>
+<!ELEMENT cognom    (#PCDATA)>
+<!ELEMENT telefon   (#PCDATA)>
+<!ELEMENT sexe      (#PCDATA)>
+
+]>
+
+<persones>
+    <persona>
+        <nif>12345678Z</nif>
+        <nom>Victor</nom>
+        <cognom>Extremera</cognom>
+        <telefon>666666666</telefon>
+        <sexe>Home</sexe>
+    </persona>
+    <persona>
+        <nif>87654321A</nif>
+        <nom>Pepe</nom>
+        <cognom>Garcia</cognom>
+        <cognom>Martinez</cognom>
+        <cognom>Testa</cognom>
+        <telefon>666643426</telefon>
+        <telefon>623434263</telefon>
+        <telefon>664214426</telefon>
+        <telefon>669893426</telefon>
+    </persona>
+</persones>

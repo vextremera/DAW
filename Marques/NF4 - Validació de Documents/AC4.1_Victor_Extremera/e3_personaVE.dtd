@@ -1,0 +1,8 @@
+<!ELEMENT persones  (persona+)>
+<!ELEMENT persona   (nif, nom, cognom+, (telefon* | correu*), sexe?)>
+<!ELEMENT nif       (#PCDATA)>
+<!ELEMENT nom       (#PCDATA)>
+<!ELEMENT cognom    (#PCDATA)>
+<!ELEMENT telefon   (#PCDATA)>
+<!ELEMENT correu    (#PCDATA)>
+<!ELEMENT sexe      (#PCDATA)>

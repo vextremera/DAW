@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alumne>
+    <nom>Victor</nom>
+    <cognoms>
+        <cognom1>Extremera</cognom1>
+        <cognom2>Moreno</cognom2>
+    </cognoms>
+    <telefon>611 111 111</telefon>
+</alumne>

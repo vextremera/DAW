@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<usuaris>
+    <usuari>
+        <nom_usuari>maria</nom_usuari>
+        <contrasenya>password123</contrasenya>
+        <uid>1001</uid>
+        <gid>1001</gid>
+        <info>Informació de Maria</info>
+        <directori_inici>/home/maria</directori_inici>
+        <shell>/bin/bash</shell>
+    </usuari>
+    <usuari>
+        <nom_usuari>joan</nom_usuari>
+        <contrasenya>passw0rd</contrasenya>
+        <uid>1002</uid>
+        <gid>1002</gid>
+        <info>Informació de Joan</info>
+        <directori_inici>/home/joan</directori_inici>
+        <shell>/bin/zsh</shell>
+    </usuari>
+    <usuari>
+        <nom_usuari>laura</nom_usuari>
+        <contrasenya>laurapass</contrasenya>
+        <uid>1003</uid>
+        <gid>1003</gid>
+        <info>Informació de Laura</info>
+        <directori_inici>/home/laura</directori_inici>
+        <shell>/bin/bash</shell>
+    </usuari>
+    <usuari>
+        <nom_usuari>antonio</nom_usuari>
+        <contrasenya>12345</contrasenya>
+        <uid>1004</uid>
+        <gid>1004</gid>
+        <info>Informació d'Antonio</info>
+        <directori_inici>/home/antonio</directori_inici>
+        <shell>/bin/sh</shell>
+    </usuari>
+    <usuari>
+        <nom_usuari>sara</nom_usuari>
+        <contrasenya>sarapass</contrasenya>
+        <uid>1005</uid>
+        <gid>1005</gid>
+        <info>Informació de Sara</info>
+        <directori_inici>/home/sara</directori_inici>
+        <shell>/bin/bash</shell>
+    </usuari>
+</usuaris>

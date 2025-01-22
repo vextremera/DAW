@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persona>
+    <dni>45763872Y</dni>
+    <nom>Pedro</nom>
+    <cognoms>
+        <cognom1>Iñigo</cognom1>
+        <cognom2>Palotes</cognom2>
+    </cognoms>
+    <adreça>
+        
+    </adreça>
+</persona>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE persones SYSTEM "e3_personaVE.dtd">
+
+<persones>
+    <persona>
+        <nif>12345678Z</nif>
+        <nom>Victor</nom>
+        <cognom>Extremera</cognom>
+        <telefon>666666666</telefon>
+        <sexe>Home</sexe>
+    </persona>
+    <persona>
+        <nif>87654321A</nif>
+        <nom>Pepe</nom>
+        <cognom>Garcia</cognom>
+        <cognom>Martinez</cognom>
+        <cognom>Testa</cognom>
+        <telefon>66323426</telefon>
+        <telefon>623434263</telefon>
+    </persona>
+    <persona>
+        <nif>87654321A</nif>
+        <nom>Pepe</nom>
+        <cognom>Garcia</cognom>
+        <correu>holas@gmail.com</correu>
+        <correu>ho2s@lavida.com</correu>
+        <correu>h421s@hotmail.com</correu>
+    </persona>
+    <persona>
+        <nif>87654321A</nif>
+        <nom>Pepe</nom>
+        <cognom>Garcia</cognom>
+    </persona>
+</persones>

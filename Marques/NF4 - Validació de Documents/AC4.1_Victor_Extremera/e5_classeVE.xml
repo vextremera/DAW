@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE classe SYSTEM "e4_classeVE.dtd">
+
+<classe>
+    <persones>
+        <tutor>
+            <nif>24145523D</nif>
+            <nom>Sr</nom>
+            <cognom>Profe</cognom>
+            <telefon>611111111</telefon>
+            <correu>tutor@sapalomera.cat</correu>
+        </tutor>
+        <alumnes>
+            <alumne>
+                <nif>1832644D</nif>
+                <nom>Lewis</nom>
+                <cognom>Linkong</cognom>
+                <telefon>666666666</telefon>
+                <telefon>666666666</telefon>
+                <correu>lewis@sapalomera.cat</correu>
+                <correu>hlinkongs@sapalomera.cat</correu>
+                <correu>l.linkong@hotmail.es</correu>
+            </alumne>
+            <alumne>
+                <nif>1832644D</nif>
+                <nom>Lewis</nom>
+                <cognom>Linkong</cognom>
+                <cognom>Campmayo</cognom>
+            </alumne>
+            <alumne>
+                <nif>1832644D</nif>
+                <nom>Lewis</nom>
+                <cognom>Linkong</cognom>
+                <cognom>Sances</cognom>
+                <cognom>Masedo</cognom>
+                <cognom>Grass</cognom>
+                <correu>s.grass@sapalomera.cat</correu>
+                <correu>masedo@hotmail.es</correu>
+            </alumne>
+            <alumne>
+                <nif>1832644D</nif>
+                <nom>Lewis</nom>
+                <cognom>Linkong</cognom>
+                <cognom>Cañadas</cognom>
+                <cognom>Extremera</cognom>
+                <telefon>66413416666</telefon>
+                <correu>canadas@sapalomera.cat</correu>
+                <correu>extremera@hotmail.es</correu>
+            </alumne>
+            <alumne>
+                <nif>1832644D</nif>
+                <nom>Lewis</nom>
+                <cognom>Linkong</cognom>
+                <cognom>Fedez</cognom>
+                <cognom>Martinez</cognom>
+                <cognom>Kindred</cognom>
+                <cognom>Perez</cognom>
+                <telefon>642141366</telefon>
+                <telefon>6643423566</telefon>
+                <telefon>6663623266</telefon>
+            </alumne>
+        </alumnes>
+    </persones>
+</classe>

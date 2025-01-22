@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<persona>
+    <dni>12345678Z</dni>
+    <nom>Maria</nom>
+    <cognom1>Martínez</cognom1>
+    <cognom2>Lopez</cognom2>
+    <adreça>
+        <carrer>Gran Via</carrer>
+        <numero>123</numero>
+        <pis>4</pis>
+        <porta>2</porta>
+    </adreça>
+    <telefons>
+        <telefon>987654321</telefon>
+        <telefon>123456789</telefon>
+    </telefons>
+</persona>

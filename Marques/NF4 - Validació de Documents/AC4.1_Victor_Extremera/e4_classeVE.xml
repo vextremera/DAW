@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE classe SYSTEM "e4_classeVE.dtd">
+
+<classe>
+    <alumne>
+        <nif>1832644D</nif>
+        <nom>Lewis</nom>
+        <cognom>Linkong</cognom>
+    </alumne>
+    <alumne>
+        <nif>1832644D</nif>
+        <nom>Lewis</nom>
+        <cognom>Linkong</cognom>
+        <cognom>Campmayo</cognom>
+    </alumne>
+    <alumne>
+        <nif>1832644D</nif>
+        <nom>Lewis</nom>
+        <cognom>Linkong</cognom>
+        <cognom>Sances</cognom>
+        <cognom>Masedo</cognom>
+        <cognom>Grass</cognom>
+    </alumne>
+    <alumne>
+        <nif>1832644D</nif>
+        <nom>Lewis</nom>
+        <cognom>Linkong</cognom>
+        <cognom>Cañadas</cognom>
+        <cognom>Extremera</cognom>
+    </alumne>
+    <alumne>
+        <nif>1832644D</nif>
+        <nom>Lewis</nom>
+        <cognom>Linkong</cognom>
+        <cognom>Fedez</cognom>
+        <cognom>Martinez</cognom>
+        <cognom>Kindred</cognom>
+        <cognom>Perez</cognom>
+    </alumne>
+</classe>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<equacio_2grau>
+    <formula>ax^2 + bx + c = 0</formula>
+    <resolucio>x = (-b ± sqrt(b^2 - 4ac)) / (2a)</resolucio>
+    <variables>
+        <variable nom="a" descripcio="Coeficient de x^2"/>
+        <variable nom="b" descripcio="Coeficient de x"/>
+        <variable nom="c" descripcio="Term constant"/>
+    </variables>
+</equacio_2grau>

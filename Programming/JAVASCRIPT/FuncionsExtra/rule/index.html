@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roulette</title>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="chipsMenuDiv" class="chips">
+        <div id="chip-1" src="img/chip-1.png" alt="chip-1" style="background-image: url(img/chip-1.png);"></div>
+        <div id="chip-5" src="img/chip-5.png" alt="chip-5" style="background-image: url(img/chip-5.png);"></div>
+        <div id="chip-10" src="img/chip-10.png" alt="chip-10" style="background-image: url(img/chip-10.png);"></div>
+        <div id="chip-20" src="img/chip-20.png" alt="chip-20" style="background-image: url(img/chip-20.png);"></div>
+        <div id="chip-25" src="img/chip-25.png" alt="chip-25" style="background-image: url(img/chip-25.png);"></div>
+        <div id="chip-50" src="img/chip-50.png" alt="chip-50" style="background-image: url(img/chip-50.png);"></div>
+        <div id="chip-100" src="img/chip-100.png" alt="chip-100" style="background-image: url(img/chip-100.png);"></div>
+        <div id="chip-150" src="img/chip-150.png" alt="chip-150" style="background-image: url(img/chip-150.png);"></div>
+        <div id="chip-200" src="img/chip-200.png" alt="chip-250" style="background-image: url(img/chip-200.png);"></div>
+    </div>
+<div style="display: block;">
+    <div class="buttons">
+        <button id="balance"><p id="balanceNumber">00000</p></button>
+        <button id=""><p></p></button>
+        <button id=""><p></p></button>
+        <button id=""><p></p></button> 
+        <button id="calcular-button"><p>calcular</p></button>
+        <button id="chips-button"><p>chips</p></button>
+    </div>
+
+    <div class="table-bet">
+        <!-- Numbers -->
+        <div class="numbers green zero">0</div>
+        <div class="numbers red">3</div>
+        <div class="numbers black">6</div>
+        <div class="numbers red">9</div>
+        <div class="numbers red">12</div>
+        <div class="numbers black">15</div>
+        <div class="numbers red">18</div>
+        <div class="numbers red">21</div>
+        <div class="numbers black">24</div>
+        <div class="numbers red">27</div>
+        <div class="numbers red">30</div>
+        <div class="numbers black">33</div>
+        <div class="numbers red">36</div>
+        <div id="lineBet-1" class="bet bet-2-to-1">2/1</div>
+
+        <div class="numbers black">2</div>
+        <div class="numbers red">5</div>
+        <div class="numbers black">8</div>
+        <div class="numbers black">11</div>
+        <div class="numbers red">14</div>
+        <div class="numbers black">17</div>
+        <div class="numbers black">20</div>
+        <div class="numbers red">23</div>
+        <div class="numbers black">26</div>
+        <div class="numbers black">29</div>
+        <div class="numbers red">32</div>
+        <div class="numbers black">35</div>
+        <div id="lineBet-2" class="bet bet-2-to-1">2/1</div>
+
+        <div class="numbers red">1</div>
+        <div class="numbers black">4</div>
+        <div class="numbers red">7</div>
+        <div class="numbers black">10</div>
+        <div class="numbers black">13</div>
+        <div class="numbers red">16</div>
+        <div class="numbers red">19</div>
+        <div class="numbers black">22</div>
+        <div class="numbers red">25</div>
+        <div class="numbers black">28</div>
+        <div class="numbers black">31</div>
+        <div class="numbers red">34</div>
+        <div id="lineBet-3" class="bet bet-2-to-1">2/1</div>
+
+        <div class="big-space"></div>
+
+        <!-- Special bets -->
+        <div id="thirdBet-1" class="docena-bet">1st 12</div>
+        <div id="thirdBet-2" class="docena-bet">2nd 12</div>
+        <div id="thirdBet-3" class="docena-bet">3rd 12</div>
+
+        <div id="wrong" class="space"></div>
+
+        <!-- Odds/Evens and High/Low -->
+        <div id="odd" class="special-bet">Odd</div>
+        <div id="even" class="special-bet">Even</div>
+        <div id="red-button" class="color-bet red">Red</div>
+        <div id="black-button" class="color-bet black">Black</div>
+        <div id="half-1" class="special-bet">1-18</div>
+        <div id="half-2" class="special-bet">19-36</div>
+
+        <div id="erase" class="space"></div>
+
+    </div>
+</div>
+    <button id="calcular"></button>
+</body>
+
+</html>
