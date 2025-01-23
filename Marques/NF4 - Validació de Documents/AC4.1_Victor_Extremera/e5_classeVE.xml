@@ -5,8 +5,8 @@
 <classe aula="A4">
     <tutor>
         <persona id="p1">
-            <nif>24145523D</nif>
-            <nom>Sr</nom>
+            <nif id="D24145523">24145523D</nif>
+            <nom nom="Sr">Sr</nom>
             <cognom>Profe</cognom>
             <telefon>611111111</telefon>
             <correu>tutor@sapalomera.cat</correu>
@@ -14,8 +14,8 @@
     </tutor>
     <alumnes>
         <persona id="p2">
-            <nif>1832644D</nif>
-            <nom>Lewis</nom>
+            <nif id="D1832644">1832644D</nif>
+            <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
             <telefon>666666666</telefon>
             <telefon>666666666</telefon>
@@ -24,14 +24,14 @@
             <correu>l.linkong@hotmail.es</correu>
         </persona>
         <persona id="p3">
-            <nif>1832644D</nif>
-            <nom>Lewis</nom>
+            <nif id="E9427534">9427534E</nif>
+            <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
             <cognom>Campmayo</cognom>
         </persona>
         <persona id="p4">
-            <nif>1832644D</nif>
-            <nom>Lewis</nom>
+            <nif id="G0384238">0384238G</nif>
+            <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
             <cognom>Sances</cognom>
             <cognom>Masedo</cognom>
@@ -40,8 +40,8 @@
             <correu>masedo@hotmail.es</correu>
         </persona>
         <persona id="p5">
-            <nif>1832644D</nif>
-            <nom>Lewis</nom>
+            <nif id="V48951145">48951145V</nif>
+            <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
             <cognom>Cañadas</cognom>
             <cognom>Extremera</cognom>
@@ -50,8 +50,8 @@
             <correu>extremera@hotmail.es</correu>
         </persona>
         <persona id="p6">
-            <nif>1832644D</nif>
-            <nom>Lewis</nom>
+            <nif id="U93579851">93579851U</nif>
+            <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
             <cognom>Fedez</cognom>
             <cognom>Martinez</cognom>

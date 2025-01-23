@@ -4,34 +4,34 @@
 
 <classe>
     <alumne id="p1">
-        <nif>1832644D</nif>
-        <nom>Lewis</nom>
+        <nif id="D1832644">1832644D</nif>
+        <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
     </alumne>
     <alumne id="p2">
-        <nif>1832644D</nif>
-        <nom>Lewis</nom>
+        <nif id="T185342344">185342344T</nif>
+        <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
         <cognom>Campmayo</cognom>
     </alumne>
     <alumne id="p3">
-        <nif>1832644D</nif>
-        <nom>Lewis</nom>
+        <nif id="L42107583">42107583L</nif>
+        <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
         <cognom>Sances</cognom>
         <cognom>Masedo</cognom>
         <cognom>Grass</cognom>
     </alumne>
     <alumne id="p4">
-        <nif>1832644D</nif>
-        <nom>Lewis</nom>
+        <nif id="P51543426">515434256P</nif>
+        <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
         <cognom>Cañadas</cognom>
         <cognom>Extremera</cognom>
     </alumne>
     <alumne id="p5">
-        <nif>1832644D</nif>
-        <nom>Lewis</nom>
+        <nif id="K8421752">8421752K</nif>
+        <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
         <cognom>Fedez</cognom>
         <cognom>Martinez</cognom>

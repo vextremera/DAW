@@ -3,27 +3,31 @@
 <!DOCTYPE persones [
 
 <!ELEMENT persones  (persona+)>
-<!ELEMENT persona   (nif, nom, cognom+, telefon+)>
+<!ELEMENT persona   (nif, nom, cognom+, telefon+, sexe?)>
 <!ELEMENT nif       (#PCDATA)>
 <!ELEMENT nom       (#PCDATA)>
 <!ELEMENT cognom    (#PCDATA)>
 <!ELEMENT telefon   (#PCDATA)>
+<!ELEMENT sexe      (#PCDATA)>  
 
 <!ATTLIST persona id ID #REQUIRED>
-<!ATTLIST persona sexe CDATA #IMPLIED>
+<!ATTLIST nif id ID #REQUIRED>
+<!ATTLIST nom nom CDATA #REQUIRED>
+<!ATTLIST sexe sexe CDATA #IMPLIED>
 
 ]>
 
 <persones>
-    <persona id="p1" sexe="home">
-        <nif>12345678Z</nif>
-        <nom>Victor</nom>
+    <persona id="p1">
+        <nif id="Z12345678" >12345678Z</nif>
+        <nom nom="Victor">Victor</nom>
         <cognom>Extremera</cognom>
         <telefon>666666666</telefon>
+        <sexe>Home</sexe>
     </persona>
     <persona id="p2">
-        <nif>87654321A</nif>
-        <nom>Pepe</nom>
+        <nif id="A87654321">87654321A</nif>
+        <nom nom="Pepe">Pepe</nom>
         <cognom>Garcia</cognom>
         <cognom>Martinez</cognom>
         <cognom>Testa</cognom>
@@ -31,5 +35,12 @@
         <telefon>623434263</telefon>
         <telefon>664214426</telefon>
         <telefon>669893426</telefon>
+    </persona>
+    <persona id="p3">
+        <nif id="Y43345678" >43345678Y</nif>
+        <nom nom="Pere">Pere</nom>
+        <cognom>Lines</cognom>
+        <telefon>666666666</telefon>
+        <sexe sexe="dona">Dona</sexe>
     </persona>
 </persones>

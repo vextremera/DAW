@@ -10,3 +10,5 @@
 
 <!ATTLIST classe aula ID #IMPLIED>
 <!ATTLIST persona id ID #REQUIRED>
+<!ATTLIST nif id ID #REQUIRED>
+<!ATTLIST nom nom CDATA #REQUIRED>

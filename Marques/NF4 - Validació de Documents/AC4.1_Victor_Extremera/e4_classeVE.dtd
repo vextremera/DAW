@@ -5,3 +5,5 @@
 <!ELEMENT cognom    (#PCDATA)>
 
 <!ATTLIST alumne id ID #REQUIRED>
+<!ATTLIST nif id ID #REQUIRED>
+<!ATTLIST nom nom CDATA #REQUIRED>

@@ -3,15 +3,16 @@
 <!DOCTYPE persones SYSTEM "e3_personaVE.dtd">
 
 <persones>
-    <persona id="p1" sexe="home">
-        <nif>12345678Z</nif>
-        <nom>Victor</nom>
+    <persona id="p1">
+        <nif id="Z12345678">12345678Z</nif>
+        <nom nom="Victor">Victor</nom>
         <cognom>Extremera</cognom>
         <telefon>666666666</telefon>
+        <sexe sexe="home">Home</sexe>
     </persona>
     <persona id="p2">
-        <nif>87654321A</nif>
-        <nom>Pepe</nom>
+        <nif id="A87654321">87654321A</nif>
+        <nom nom="Pepe">Pepe</nom>
         <cognom>Garcia</cognom>
         <cognom>Martinez</cognom>
         <cognom>Testa</cognom>
@@ -19,16 +20,17 @@
         <telefon>623434263</telefon>
     </persona>
     <persona id="p3">
-        <nif>87654321A</nif>
-        <nom>Pepe</nom>
+        <nif id="A65352351">65352351A</nif>
+        <nom nom="Pere">Pere</nom>
         <cognom>Garcia</cognom>
         <correu>holas@gmail.com</correu>
         <correu>ho2s@lavida.com</correu>
         <correu>h421s@hotmail.com</correu>
+        <sexe>No-binari</sexe>
     </persona>
-    <persona id="p4" sexe="dona">
-        <nif>87654321A</nif>
-        <nom>Pepe</nom>
-        <cognom>Garcia</cognom>
+    <persona id="p4">
+        <nif id="A51435331">51435331A</nif>
+        <nom nom="Raul">Raul</nom>
+        <cognom>Pi</cognom>
     </persona>
 </persones>

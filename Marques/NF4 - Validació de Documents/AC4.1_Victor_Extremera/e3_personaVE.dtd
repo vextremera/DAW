@@ -8,4 +8,6 @@
 <!ELEMENT sexe      (#PCDATA)>
 
 <!ATTLIST persona id ID #REQUIRED>
-<!ATTLIST persona sexe CDATA #IMPLIED>
+<!ATTLIST nif id ID #REQUIRED>
+<!ATTLIST nom nom CDATA #REQUIRED>
+<!ATTLIST sexe sexe CDATA #IMPLIED>
