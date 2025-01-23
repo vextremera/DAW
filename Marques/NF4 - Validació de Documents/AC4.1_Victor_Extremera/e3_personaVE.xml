@@ -3,14 +3,13 @@
 <!DOCTYPE persones SYSTEM "e3_personaVE.dtd">
 
 <persones>
-    <persona>
+    <persona id="p1" sexe="home">
         <nif>12345678Z</nif>
         <nom>Victor</nom>
         <cognom>Extremera</cognom>
         <telefon>666666666</telefon>
-        <sexe>Home</sexe>
     </persona>
-    <persona>
+    <persona id="p2">
         <nif>87654321A</nif>
         <nom>Pepe</nom>
         <cognom>Garcia</cognom>
@@ -19,7 +18,7 @@
         <telefon>66323426</telefon>
         <telefon>623434263</telefon>
     </persona>
-    <persona>
+    <persona id="p3">
         <nif>87654321A</nif>
         <nom>Pepe</nom>
         <cognom>Garcia</cognom>
@@ -27,7 +26,7 @@
         <correu>ho2s@lavida.com</correu>
         <correu>h421s@hotmail.com</correu>
     </persona>
-    <persona>
+    <persona id="p4" sexe="dona">
         <nif>87654321A</nif>
         <nom>Pepe</nom>
         <cognom>Garcia</cognom>

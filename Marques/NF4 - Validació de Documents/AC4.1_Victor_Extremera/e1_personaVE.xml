@@ -5,20 +5,22 @@
 <!ELEMENT persones  (persona+)>
 <!ELEMENT persona   (nif, nom, cognom1, cognom2?)>
 <!ELEMENT nif       (#PCDATA)>
-<!ELEMENT nom    (#PCDATA)>
-<!ELEMENT cognom1 (#PCDATA)>
-<!ELEMENT cognom2 (#PCDATA)>
+<!ELEMENT nom       (#PCDATA)>
+<!ELEMENT cognom1   (#PCDATA)>
+<!ELEMENT cognom2   (#PCDATA)>
+
+<!ATTLIST persona id ID #REQUIRED>
 
 ]>
 
 <persones>
-    <persona>
+    <persona id="p1">
         <nif>12345678Z</nif>
         <nom>Victor</nom>
         <cognom1>Extremera</cognom1>
         <cognom2>Moreno</cognom2>
     </persona>
-    <persona>
+    <persona id="p2">
         <nif>87654321A</nif>
         <nom>Pepe</nom>
         <cognom1>Garcia</cognom1>
