@@ -7,7 +7,6 @@
 <!ELEMENT correu    (#PCDATA)>
 <!ELEMENT sexe      (#PCDATA)>
 
-<!ATTLIST persona id ID #REQUIRED>
 <!ATTLIST nif id ID #REQUIRED>
 <!ATTLIST nom nom CDATA #REQUIRED>
 <!ATTLIST sexe sexe CDATA #IMPLIED>

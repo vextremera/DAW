@@ -9,7 +9,6 @@
 <!ELEMENT cognom1   (#PCDATA)>
 <!ELEMENT cognom2   (#PCDATA)>
 
-<!ATTLIST persona id ID #REQUIRED>
 <!ATTLIST nif id ID #REQUIRED>
 <!ATTLIST nom nom CDATA #REQUIRED>
 <!ATTLIST cognom1 cognom1 CDATA #REQUIRED>
@@ -18,18 +17,18 @@
 ]>
 
 <persones>
-    <persona id="p1">
+    <persona>
         <nif id="Z12345678">12345678Z</nif>
         <nom nom="Victor">Victor</nom>
         <cognom1 cognom1="Extremera">Extremera</cognom1>
         <cognom2 cognom2="Moreno">Moreno</cognom2>
     </persona>
-    <persona id="p2">
+    <persona>
         <nif id="A87654321">87654321A</nif>
         <nom nom="Pepe">Pepe</nom>
         <cognom1 cognom1="Garcia">Garcia</cognom1>
     </persona>
-    <persona id="p3">
+    <persona>
         <nif id="H141532452">141532452H</nif>
         <nom nom="Marc">Marc</nom>
         <cognom1 cognom1="Perez">Perez</cognom1>

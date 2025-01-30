@@ -2,9 +2,9 @@
 
 <!DOCTYPE classe SYSTEM "e5_classeVE.dtd">
 
-<classe aula="A4">
+<classe>
     <tutor>
-        <persona id="p1">
+        <persona>
             <nif id="D24145523">24145523D</nif>
             <nom nom="Sr">Sr</nom>
             <cognom>Profe</cognom>
@@ -13,7 +13,7 @@
         </persona>
     </tutor>
     <alumnes>
-        <persona id="p2">
+        <persona>
             <nif id="D1832644">1832644D</nif>
             <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
@@ -23,13 +23,13 @@
             <correu>hlinkongs@sapalomera.cat</correu>
             <correu>l.linkong@hotmail.es</correu>
         </persona>
-        <persona id="p3">
+        <persona>
             <nif id="E9427534">9427534E</nif>
             <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
             <cognom>Campmayo</cognom>
         </persona>
-        <persona id="p4">
+        <persona>
             <nif id="G0384238">0384238G</nif>
             <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
@@ -39,7 +39,7 @@
             <correu>s.grass@sapalomera.cat</correu>
             <correu>masedo@hotmail.es</correu>
         </persona>
-        <persona id="p5">
+        <persona>
             <nif id="V48951145">48951145V</nif>
             <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>
@@ -49,7 +49,7 @@
             <correu>canadas@sapalomera.cat</correu>
             <correu>extremera@hotmail.es</correu>
         </persona>
-        <persona id="p6">
+        <persona>
             <nif id="U93579851">93579851U</nif>
             <nom nom="Lewis">Lewis</nom>
             <cognom>Linkong</cognom>

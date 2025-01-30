@@ -3,18 +3,18 @@
 <!DOCTYPE classe SYSTEM "e4_classeVE.dtd">
 
 <classe>
-    <alumne id="p1">
+    <alumne>
         <nif id="D1832644">1832644D</nif>
         <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
     </alumne>
-    <alumne id="p2">
+    <alumne>
         <nif id="T185342344">185342344T</nif>
         <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
         <cognom>Campmayo</cognom>
     </alumne>
-    <alumne id="p3">
+    <alumne>
         <nif id="L42107583">42107583L</nif>
         <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
@@ -22,14 +22,14 @@
         <cognom>Masedo</cognom>
         <cognom>Grass</cognom>
     </alumne>
-    <alumne id="p4">
+    <alumne>
         <nif id="P51543426">515434256P</nif>
         <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
         <cognom>Cañadas</cognom>
         <cognom>Extremera</cognom>
     </alumne>
-    <alumne id="p5">
+    <alumne>
         <nif id="K8421752">8421752K</nif>
         <nom nom="Lewis">Lewis</nom>
         <cognom>Linkong</cognom>
