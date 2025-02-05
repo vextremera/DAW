@@ -24,14 +24,18 @@ Crea la base de dades gestio-empleats descarregant els scripts des de Github.
 ## 1.2.3 Consultes sobre una taula amb funcions
 
 1. Llista totes les columnes de la taula empleats.
-2. Llista els cognoms de tots els empleats.
-3. Llista els cognoms dels empleats eliminant els cognoms que estiguin repetits.
-4. Llista el nom i els cognoms de tots els empleats.
-5. Mostra els cognoms i nom dels empleats concatenats amb una coma i un
+~~~~sql
+SELECT *
+  FROM empleats;
+~~~~
+3. Llista els cognoms de tots els empleats.
+4. Llista els cognoms dels empleats eliminant els cognoms que estiguin repetits.
+5. Llista el nom i els cognoms de tots els empleats.
+6. Mostra els cognoms i nom dels empleats concatenats amb una coma i un
 espai en blanc.
-6. Volem una columna on estigui tot en majúscules i l’altre tot en minúscules. Anomena les columnes com a "nom_majuscules" i "nom_minuscules" respectivament.
-7. Mostra les 6 primeres lletres dels cognoms dels empleats
-8. Quins són els empleats que tenen la longitud del cognoms major a 6? (Mostra els cognoms i la longitud)
+7. Volem una columna on estigui tot en majúscules i l’altre tot en minúscules. Anomena les columnes com a "nom_majuscules" i "nom_minuscules" respectivament.
+8. Mostra les 6 primeres lletres dels cognoms dels empleats
+9. Quins són els empleats que tenen la longitud del cognoms major a 6? (Mostra els cognoms i la longitud)
 12. Substitueix totes les 'a' dels cognoms dels empleats per 'e'. Ordena pel nou valor dels cognoms
 13. Mostra tots els empleats que tenen en la segona posició dels cognoms una 'a'. (Sense utilitzar l’operador LIKE, ni REGEXP)
 14. Per cada empleat mostra el codi d’empleat, cognom i el salari amb un augment del 15% expressat com un número enter, etiqueta la columna amb el nom "nou_salari".
