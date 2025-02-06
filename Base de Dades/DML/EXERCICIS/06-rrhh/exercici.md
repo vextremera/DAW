@@ -297,8 +297,9 @@ GROUP BY any;
 ~~~~
 16. Mostra els codis de departament que tenen 3 o més empleats. Mostra només el codi del departament.
 ~~~~mysql
-SELECT DISTINCT departament_id
+SELECT departament_id
 	FROM empleats
+WHERE departament_id IS NOT NULL
 GROUP BY departament_id
 HAVING COUNT(*) >= 3;
 ~~~~
