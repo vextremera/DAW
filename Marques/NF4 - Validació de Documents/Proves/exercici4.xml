@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cotxe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:noNamespaceSchemaLocation="exercici4.xsd"
+           matrícula="1234-ABC">
+    <marca>Ford</marca>
+    <model>Focus</model>
+</cotxe>

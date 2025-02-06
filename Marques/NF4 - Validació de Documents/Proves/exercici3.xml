@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:noNamespaceSchemaLocation="exercici3.xsd">
+    <producte>
+        <nom>Poma</nom>
+        <preu>1.50</preu>
+    </producte>
+    <producte>
+        <nom>Plàtan</nom>
+        <preu>0.75</preu>
+    </producte>
+    <producte>
+        <nom>Taronges</nom>
+        <preu>2.3055667</preu>
+    </producte>
+</productes>

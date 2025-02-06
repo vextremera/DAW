@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<llibre xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="exercici1.xsd">
+    <titol>El Nom del Vent</titol>
+    <autor>Patrick Rothfuss</autor>
+</llibre>

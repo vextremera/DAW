@@ -1,0 +1,22 @@
+<escola xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:noNamespaceSchemaLocation="exercici5.xsd"
+           nom="Escola Exemplar">
+    <alumne>
+        <nom>Anna Pérez</nom>
+        <edat>12</edat>
+        <notes>
+            <nota>8.5</nota>
+            <nota>7.2</nota>
+            <nota>9.0</nota>
+        </notes>
+    </alumne>
+    <alumne>
+        <nom>Joan Martí</nom>
+        <edat>16</edat>
+        <notes>
+            <nota>6.8</nota>
+            <nota>5.5</nota>
+            <nota>7.1</nota>
+        </notes>
+    </alumne>
+</escola>
