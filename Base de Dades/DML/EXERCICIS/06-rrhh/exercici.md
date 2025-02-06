@@ -209,14 +209,16 @@ WHERE YEAR(data_contractacio) = YEAR(curdate()) -1;
 ~~~~
 2. Quin és el treballador (nº d’anys no el nom del treballador) amb més anys d'antiguitat.
 ~~~~mysql
-SELECT MAX(TIMESTAMPDIFF(YEAR, data_contractacio, CURDATE())) AS anys_antiguitat
+SELECT MAX(TIMESTAMPDIFF(YEAR, data_contractacio, CURDATE()))
+		AS anys_antiguitat
 	FROM empleats;
 -- ORDER BY anys_antiguitat DESC
 -- LIMIT 1
 ~~~~
 3. Quin és el treballador(nº d’anys no el nom del treballador) amb menys anys d'antiguitat.
 ~~~~mysql
-SELECT MIN(TIMESTAMPDIFF(YEAR, data_contractacio, CURDATE())) AS anys_antiguitat
+SELECT MIN(TIMESTAMPDIFF(YEAR, data_contractacio, CURDATE()))
+		AS anys_antiguitat
 	FROM empleats;
 ~~~~
 4. Quin és el salari mig de l'empresa
@@ -256,7 +258,8 @@ ORDER BY num_empleats ASC;
 ~~~~
 10. Partint de la consulta anterior, volem saber també quants empleats no tenen departament assignat. Mostra el text "No assignat" com a identificador del departament.
 ~~~~mysql
-SELECT COUNT(*) AS num_empleats, IFNULL(departament_id, "No Assignat") AS departament_id
+SELECT COUNT(*) AS num_empleats, IFNULL(departament_id, "No Assignat")
+						AS departament_id
 	FROM empleats
 GROUP BY departament_id
 ORDER BY num_empleats ASC;
