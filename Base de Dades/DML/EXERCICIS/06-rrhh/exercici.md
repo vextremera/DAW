@@ -312,11 +312,34 @@ WHERE salari > 9000;
 
 ## 1.2.5 Consultes multitaula (JOINs)
 
-1. Calcula el nombre d' empleats que treballen en cadascun dels departaments. El resultat d' aquesta consulta també ha d' incloure aquells departaments que no tenen cap empleat associat.
-2. ----Retorna un llistat amb els empleats i les dades dels departaments on treballa cadascú.
-3. Retorna un llistat amb els empleats i les dades dels departaments on treballa cadascú. Ordena el resultat, en primer lloc pel nom del departament (en ordre alfabètic) i en segon lloc pels cognoms i el nom dels empleats.
-4. Retorna un llistat amb el codi i el nom del departament, només d' aquells departaments que tenen empleats.
+1. Mostra de cada empleat, el nom del departament, cognoms i nom de l’empleat. Ordena les dades per nom departament, cognoms i nom de forma ascendent.
+~~~~mysql
+SELECT	e.nom,
+	e.cognoms,
+        d.nom AS departament
+	FROM empleats e
+	INNER JOIN departaments d ON d.departament_id = e.departament_id
+ORDER BY departament ASC, e.cognoms ASC, e.nom ASC;
+~~~~
+2. Mostra de cada departament,  el codi, el nom de departament, l’adreça, el codi postal i el nomde la ciutat.
+~~~~mysql
+SELECT	d.departament_id,
+		l.adreca,
+		l.codi_postal,
+		l.ciutat
+	FROM departaments d
+    INNER JOIN localitzacions l ON l.localitzacio_id = d.localitzacio_id;
+~~~~
+3. Mostra del departament de 'Marketing', el codi, el nom de departament, l'adreça,  el codi postal i el nom de la  ciutat. Per simplificar l'escriptura dona un alias a les taules  (per exemple d per departaments i l per localitzacions).
+~~~~~mysql
+
+~~~~
+4. De les localitzacions amb codi 1400, 1700 i 2500, ens interessa saber el seu codi, el nom de la ciutat, el nom  de l’estat/província, el nom del país i el nom de la regió. Ordena per codi localització.
+~~~~~mysql
+
+~~~~
 5. Retorna un llistat amb el codi, el nom del departament i el valor del pressupost actual de què disposa, només d' aquells departaments que tenen empleats. El valor del pressupost actual el pot calcular restant al valor del pressupost inicial (columna pressupost) el valor de les despeses que ha generat (columna despeses).
+
 6. Retorna el nom del departament on treballa l' empleat que té el nif 38382980M.
 7. Retorna el nom del departament on treballa l'empleat Pepe Ruiz Santana.
 8. Retorna un llistat amb les dades dels empleats que treballen al departament d' R + D. Ordena el resultat alfabèticament.
