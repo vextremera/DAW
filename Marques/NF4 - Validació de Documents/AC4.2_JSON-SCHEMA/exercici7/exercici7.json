@@ -1,0 +1,20 @@
+{
+    "$schema": "./exercici7.jsd",
+    "id_reserva": 16242,
+    "client": {
+        "nom": "Pepe Snaces",
+        "email": "lavida@lavidalavida.es",
+        "habitacions": [
+            {
+                "tipus": "doble",
+                "nombre_nits": 3,
+                "preu_per_nit": 15398.93
+            },
+            {
+                "tipus": "suite",
+                "nombre_nits": 2,
+                "preu_per_nit": 120.0
+            }
+        ]
+    }
+}

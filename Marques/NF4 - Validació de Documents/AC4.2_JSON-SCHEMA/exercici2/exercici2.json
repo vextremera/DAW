@@ -1,0 +1,6 @@
+{
+    "$schema": "./exercici2.jsd",
+    "name": "hamburguesa",
+    "preu": 50,
+    "disponible": true
+}

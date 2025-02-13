@@ -1,0 +1,8 @@
+{
+    "$schema": "./exercici4.jsd",
+    "reserva": {
+        "nom": "Victor Extremera",
+        "dies": 4,
+        "tipus_habitacio": "doble"
+    }
+}

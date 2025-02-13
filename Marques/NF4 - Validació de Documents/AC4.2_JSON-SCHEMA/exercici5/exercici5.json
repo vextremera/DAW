@@ -1,0 +1,8 @@
+{
+    "$schema": "./exercici5.jsd",
+    "usuaris": {
+        "nom": "Victor Extremera",
+        "email": "hey.veggeta@ereselmejor.cat",
+        "data_registre": "5847-28-12"
+    }
+}

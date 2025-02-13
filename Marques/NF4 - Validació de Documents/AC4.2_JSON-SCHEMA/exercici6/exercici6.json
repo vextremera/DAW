@@ -1,0 +1,6 @@
+{
+    "$schema": "./exercici6.jsd",
+    "comanda_id": 1,
+    "client": "Rodolfredo",
+    "estat" : "enviat"
+}

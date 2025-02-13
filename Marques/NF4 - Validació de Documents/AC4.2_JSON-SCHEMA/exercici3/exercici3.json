@@ -1,0 +1,13 @@
+{
+    "$schema": "./exercici3.jsd",
+    "biblioteca": [
+        {
+            "titol": "La Guerra de las Galaxias",
+            "autor": "Pepe Gomez"
+        },
+        {
+            "titol": "Stitch",
+            "autor": "Pfsr. Clocker"
+        }
+    ]
+}

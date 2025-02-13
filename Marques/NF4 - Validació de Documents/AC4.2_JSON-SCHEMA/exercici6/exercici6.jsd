@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "comanda": {
+          	"type": "object",
+            "properties": {
+            "id_comanda": { "type": "integer" },
+            "client": { "type": "string" },
+            "estat": {
+                "type": "string",
+                "enum": ["pendent", "enviat", "entregat", "cancel·lat" ],
+                "default": "pendent"
+            	}
+            }
+        }
+    }
+}

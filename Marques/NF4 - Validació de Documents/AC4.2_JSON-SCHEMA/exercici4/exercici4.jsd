@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "reserva": {
+          	"type": "object",
+            "properties": {
+            "nom": { "type": "string" },
+            "dies": { "type": "integer" },
+            "tipus_habitacio": {
+                "type": "string",
+                "enum": ["individual", "doble", "suite"],
+                "default": "individual"
+            	}
+            },
+             "required": ["nom", "dies", "tipus_habitacio"]
+        }
+    },
+    "required": [ "reserva" ]  
+}

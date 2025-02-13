@@ -9,7 +9,7 @@
                             <xs:element name="nom"/>
                             <xs:element name="edat">
                                 <xs:simpleType>
-                                    <xs:restriction base="xs:int">
+                                    <xs:restriction base="xs:integer">
                                         <xs:minInclusive value="3"/>
                                         <xs:maxInclusive value="18"/>
                                     </xs:restriction>
