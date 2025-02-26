@@ -1,75 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/style.css"?>
 <curs xmlns:xsi="http://www.w3.org/1999/xhtml" 
            xsi:noNamespaceSchemaLocation="../xsd/plantilla.xsd"
            nom="DAW1">
     <modul>
-        <nom>Sistemes Informatics</nom>
-        <codi>M0483</codi>
-        <professor>Ricard Pla</professor>
+        <nom><h1 class="sistemes">Sistemes Informatics</h1></nom>
+        <codi><h2>M0483</h2></codi>
+        <professor><h3>Ricard Pla</h3></professor>
         <temes>
             <tema>
-                <titol>PART I - INTRODUCCIÓ I CONCEPTES BÀSICS</titol>
-                <descripcio>Introducció als sistemes</descripcio>
+                <titol><h4>PART I - INTRODUCCIÓ I CONCEPTES BÀSICS</h4></titol>
+                <descripcio><p>Introducció als sistemes</p></descripcio>
             </tema>
             <tema>
-                <titol>PART II - ADMINISTRACIÓ D'USUARIS I GRUPS LOCALS</titol>
-                <descripcio>Administrar usuaris i grups amb ActiveDirectory i LDAP</descripcio>
+                <titol><h4>PART II - ADMINISTRACIÓ D'USUARIS I GRUPS LOCALS</h4></titol>
+                <descripcio><p>Administrar usuaris i grups amb ActiveDirectory i LDAP</p></descripcio>
             </tema>
             <tema>
-                <titol>PART III. ADMINISTRACIÓ DE DOMINIS</titol>
-                <descripcio>Admnistrar dominis Windows i Linux</descripcio>
+                <titol><h4>PART III - ADMINISTRACIÓ DE DOMINIS</h4></titol>
+                <descripcio><p>Administrar dominis Windows i Linux</p></descripcio>
             </tema>
         </temes>
         <recursos>
             <recurs>
-                <tipus>web</tipus>
-                <tipus>Claves de producto</tipus>
-                <enllac>https://learn.microsoft.com/es-es/windows-server/get-started/kms-client-activation-keys?tabs=server2025%2Cwindows1110ltsc%2Cversion1803%2Cwindows81</enllac>
-                <autor>Windows</autor>
+                <tipus><strong>Web</strong></tipus>
+                <nom><b>Claves de producto</b></nom>
+                <enllac><a href="https://learn.microsoft.com/es-es/windows-server/get-started/kms-client-activation-keys?tabs=server2025%2Cwindows1110ltsc%2Cversion1803%2Cwindows81">Enllaç</a></enllac>
+                <autor><i>Windows</i></autor>
             </recurs>
         </recursos>
     </modul>
+    
     <modul>
-        <nom>Base de DAdes</nom>
-        <codi>M0484</codi>
-        <professor>Robert Ventura</professor>
-        <professor>Adrià Saborido</professor>
+        <nom><h1 class="bases">Base de Dades</h1></nom>
+        <codi><h2>M0484</h2></codi>
+        <professor><h3>Robert Ventura</h3></professor>
+        <professor><h3>Adrià Saborido</h3></professor>
         <temes>
             <tema>
-                <titol>RA1. Reconeix els elements de les bases de dades</titol>
-                <descripcio> Reconeix els elements de les bases de dades analitzant-ne les funcions i valorant la utilitat dels sistemes gestors.</descripcio>
+                <titol><h4>NF0 Presentació del curs</h4></titol>
+                <descripcio><p>Reconeix els elements de les bases de dades analitzant-ne les funcions i valorant la utilitat dels sistemes gestors.</p></descripcio>
             </tema>
             <tema>
-                <titol>RA2. Crea bases de dades</titol>
-                <descripcio>Crea bases de dades definint-ne l'estructura i les característiques dels elements segons el model relacional.</descripcio>
+                <titol><h4>NF1 Introducció a les bases de dades i disseny</h4></titol>
+                <descripcio><p>Crea bases de dades definint-ne l'estructura i les característiques dels elements segons el model relacional.</p></descripcio>
             </tema>
             <tema>
-                <titol>RA3. Consulta la informació emmagatzemada en una base de dades</titol>
-                <descripcio>Consulta la informació emmagatzemada en una base de dades fent servir assistents, eines gràfiques i el llenguatge de manipulació de dades.</descripcio>
-            </tema>
-            <tema>
-                <titol>RA4. Modifica la informació emmagatzemada a la base de dades</titol>
-                <descripcio>Modifica la informació emmagatzemada a la base de dades utilitzant assistents, eines gràfiques i el llenguatge de manipulació de dades.</descripcio>
-            </tema>
-            <tema>
-                <titol>RA5. Desenvolupa procediments</titol>
-                <descripcio>Desenvolupa procediments emmagatzemats avaluant i utilitzant les sentències del llenguatge incorporat al sistema gestor de bases de dades.</descripcio>
-            </tema>
-            <tema>
-                <titol>RA6. Dissenya models relacionals normalitzats</titol>
-                <descripcio>Dissenya models relacionals normalitzats interpretant diagrames entitat/relació.</descripcio>
-            </tema>
-            <tema>
-                <titol>RA7. Gestiona la informació</titol>
-                <descripcio>Gestiona la informació emmagatzemada en bases de dades no relacionals, avaluant i utilitzant les possibilitats que proporciona el sistema gestor.</descripcio>
+                <titol><h4>NF2 DDL (Data Definition Language)</h4></titol>
+                <descripcio><p>Consulta la informació emmagatzemada en una base de dades fent servir assistents, eines gràfiques i el llenguatge de manipulació de dades.</p></descripcio>
             </tema>
         </temes>
         <recursos>
             <recurs>
-                <tipus>web</tipus>
-                <tipus>Claves de producto</tipus>
-                <enllac>https://learn.microsoft.com/es-es/windows-server/get-started/kms-client-activation-keys?tabs=server2025%2Cwindows1110ltsc%2Cversion1803%2Cwindows81</enllac>
-                <autor>Windows</autor>
+                <tipus><strong>Github Web</strong></tipus>
+                <nom><b>Base de dades rrhh</b></nom>
+                <enllac><a href="https://github.com/sapa-basededades/M02-M10-Bases-de-Dades/blob/main/1%20-%20Llenguatge%20SQL%20DML%20i%20DDL/NF2%20-%20DML/EXERCICIS/06-sql_rrhh.md">Enllaç</a></enllac>
+                <autor><i>Robert Ventura</i></autor>
+            </recurs>
+            <recurs>
+                <tipus><strong>Web</strong></tipus>
+                <nom><b>Mastering SQL Execution Order with JOINs</b></nom>
+                <enllac><a href="https://www.databites.tech/p/mastering-sql-execution-order-with">Enllaç</a></enllac>
+                <autor><i>databites.tech</i></autor>
             </recurs>
         </recursos>
-    </modul>    
+    </modul>
+    
+    <modul>
+        <nom><h1 class="prog">Programació</h1></nom>
+        <codi><h2>M0485</h2></codi>
+        <professor><h3>Pere Sanchez</h3></professor>
+        <professor><h3>Xavier Martin</h3></professor>
+        <temes>
+            <tema>
+                <titol><h4>BLOC 1 - Programació estructurada</h4></titol>
+                <descripcio><p>Conceptes bàsics, tipus de dades simples, estructures, etc...</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>BLOC 2 - Programació Orientada a Objectes</h4></titol>
+                <descripcio><p>Introducció a Java i utilització avançada de classes i objectes</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>BLOC 3 - Arxius i bases de dades</h4></titol>
+                <descripcio><p>Col·lections, gestió d'exepcions, bases de dades relacionals i orientades a objectes</p></descripcio>
+            </tema>
+        </temes>
+    </modul>
+    
+    <modul>
+        <nom><h1>Llenguatges de Marques</h1></nom>
+        <codi><h2>M0373</h2></codi>
+        <professor><h3>Angel Bosch</h3></professor>
+        <temes>
+            <tema>
+                <titol><h4>NF1. Introducció a llenguatge de marques</h4></titol>
+                <descripcio><p>Presentació al llenguatge de marques</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>NF2. HTML, CSS i XML</h4></titol>
+                <descripcio><p>Fonaments de HTML, CSS i XML</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>NF3. LLenguatges de guions client</h4></titol>
+                <descripcio><p>Introducció a JavaScript: Llistes, Formularis, DOM...</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>NF4. Validació de documents</h4></titol>
+                <descripcio><p>Fonaments de DTD, XSD, Json...</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>NF5. Conversió i adaptació de documents per a l'intercanvi d'informació</h4></titol>
+                <descripcio><p>XSLT i XML format pàgina web amb HTML i CSS</p></descripcio>
+            </tema>
+        </temes>
+        <recursos>
+            <recurs>
+                <tipus><strong>Web</strong></tipus>
+                <nom><b>W3Schools</b></nom>
+                <enllac><a href="https://www.w3schools.com/">Enllaç</a></enllac>
+            </recurs>
+            <recurs>
+                <tipus><strong>Web</strong></tipus>
+                <nom><b>Pixabay</b></nom>
+                <enllac><a href="https://pixabay.com/es/">Enllaç</a></enllac>
+            </recurs>
+            <recurs>
+                <tipus><strong>Web</strong></tipus>
+                <nom><b>Khan Academy</b></nom>
+                <enllac><a href="https://www.khanacademy.org/">Enllaç</a></enllac>
+            </recurs>
+        </recursos>
+    </modul> 
 </curs>

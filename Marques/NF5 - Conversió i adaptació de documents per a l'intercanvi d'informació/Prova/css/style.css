@@ -1,0 +1,116 @@
+curs {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 350px;
+    background-color: #e3e3e3;
+}
+
+modul {
+    display: block;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 2px black solid;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+nom, codi, professor, titol, descripcio, tipus, enllaç, autor {
+    display: block;
+}
+
+temes {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+titol {
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: underline #bdbdbd;
+    text-underline-offset: 3px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+professor {
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #6f6f6f;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-left: 60px;
+}
+
+recurs {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid rgb(151, 227, 255);
+    margin-left: 60px;
+    padding-left: 20px;
+}
+
+enllac, autor {
+    padding-left: 10px;
+}
+
+strong {
+    font-weight: bold;
+    color: #222;
+}
+
+b {
+    font-weight: bold;
+    color: #333;
+}
+
+i {
+    font-style: italic;
+    color: #777;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
