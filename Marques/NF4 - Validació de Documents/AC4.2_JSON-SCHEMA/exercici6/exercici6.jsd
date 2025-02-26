@@ -5,13 +5,13 @@
         "comanda": {
           	"type": "object",
             "properties": {
-            "id_comanda": { "type": "integer" },
-            "client": { "type": "string" },
-            "estat": {
-                "type": "string",
-                "enum": ["pendent", "enviat", "entregat", "cancel·lat" ],
-                "default": "pendent"
-            	}
+                "id_comanda": { "type": "integer" },
+                "client": { "type": "string" },
+                "estat": {
+                    "type": "string",
+                    "enum": ["pendent", "enviat", "entregat", "cancel·lat" ],
+                    "default": "pendent"
+                    }
             }
         }
     }

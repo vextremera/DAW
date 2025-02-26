@@ -1,0 +1,75 @@
+<curs xmlns:xsi="http://www.w3.org/1999/xhtml" 
+           xsi:noNamespaceSchemaLocation="../xsd/plantilla.xsd"
+           nom="DAW1">
+    <modul>
+        <nom>Sistemes Informatics</nom>
+        <codi>M0483</codi>
+        <professor>Ricard Pla</professor>
+        <temes>
+            <tema>
+                <titol>PART I - INTRODUCCIÓ I CONCEPTES BÀSICS</titol>
+                <descripcio>Introducció als sistemes</descripcio>
+            </tema>
+            <tema>
+                <titol>PART II - ADMINISTRACIÓ D'USUARIS I GRUPS LOCALS</titol>
+                <descripcio>Administrar usuaris i grups amb ActiveDirectory i LDAP</descripcio>
+            </tema>
+            <tema>
+                <titol>PART III. ADMINISTRACIÓ DE DOMINIS</titol>
+                <descripcio>Admnistrar dominis Windows i Linux</descripcio>
+            </tema>
+        </temes>
+        <recursos>
+            <recurs>
+                <tipus>web</tipus>
+                <tipus>Claves de producto</tipus>
+                <enllac>https://learn.microsoft.com/es-es/windows-server/get-started/kms-client-activation-keys?tabs=server2025%2Cwindows1110ltsc%2Cversion1803%2Cwindows81</enllac>
+                <autor>Windows</autor>
+            </recurs>
+        </recursos>
+    </modul>
+    <modul>
+        <nom>Base de DAdes</nom>
+        <codi>M0484</codi>
+        <professor>Robert Ventura</professor>
+        <professor>Adrià Saborido</professor>
+        <temes>
+            <tema>
+                <titol>RA1. Reconeix els elements de les bases de dades</titol>
+                <descripcio> Reconeix els elements de les bases de dades analitzant-ne les funcions i valorant la utilitat dels sistemes gestors.</descripcio>
+            </tema>
+            <tema>
+                <titol>RA2. Crea bases de dades</titol>
+                <descripcio>Crea bases de dades definint-ne l'estructura i les característiques dels elements segons el model relacional.</descripcio>
+            </tema>
+            <tema>
+                <titol>RA3. Consulta la informació emmagatzemada en una base de dades</titol>
+                <descripcio>Consulta la informació emmagatzemada en una base de dades fent servir assistents, eines gràfiques i el llenguatge de manipulació de dades.</descripcio>
+            </tema>
+            <tema>
+                <titol>RA4. Modifica la informació emmagatzemada a la base de dades</titol>
+                <descripcio>Modifica la informació emmagatzemada a la base de dades utilitzant assistents, eines gràfiques i el llenguatge de manipulació de dades.</descripcio>
+            </tema>
+            <tema>
+                <titol>RA5. Desenvolupa procediments</titol>
+                <descripcio>Desenvolupa procediments emmagatzemats avaluant i utilitzant les sentències del llenguatge incorporat al sistema gestor de bases de dades.</descripcio>
+            </tema>
+            <tema>
+                <titol>RA6. Dissenya models relacionals normalitzats</titol>
+                <descripcio>Dissenya models relacionals normalitzats interpretant diagrames entitat/relació.</descripcio>
+            </tema>
+            <tema>
+                <titol>RA7. Gestiona la informació</titol>
+                <descripcio>Gestiona la informació emmagatzemada en bases de dades no relacionals, avaluant i utilitzant les possibilitats que proporciona el sistema gestor.</descripcio>
+            </tema>
+        </temes>
+        <recursos>
+            <recurs>
+                <tipus>web</tipus>
+                <tipus>Claves de producto</tipus>
+                <enllac>https://learn.microsoft.com/es-es/windows-server/get-started/kms-client-activation-keys?tabs=server2025%2Cwindows1110ltsc%2Cversion1803%2Cwindows81</enllac>
+                <autor>Windows</autor>
+            </recurs>
+        </recursos>
+    </modul>    
+</curs>
