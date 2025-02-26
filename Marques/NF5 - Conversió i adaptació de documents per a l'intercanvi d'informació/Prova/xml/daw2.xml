@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/style.css"?>
+<curs xmlns:xsi="http://www.w3.org/1999/xhtml" 
+           xsi:noNamespaceSchemaLocation="../xsd/plantilla.xsd"
+           nom="DAW2">
+    <modul>
+        <nom><h1>Servidor</h1></nom>
+        <codi><h2>M07</h2></codi>
+        <professor><h3>Xavier Martin</h3></professor>
+    </modul>
+     <modul>
+        <nom><h1>Interfícies</h1></nom>
+        <codi><h2>M09</h2></codi>
+        <professor><h3>XAinhoa Zaldua</h3></professor>
+    </modul>
+     <modul>
+        <nom><h1>Desplegament</h1></nom>
+        <codi><h2>M08</h2></codi>
+        <professor><h3>Àngel Bosch</h3></professor>
+    </modul>
+     <modul>
+        <nom><h1>Projecte</h1></nom>
+        <codi><h2>M12</h2></codi>
+        <professor><h3>Pere Sánchez</h3></professor>
+    </modul>
+     <modul>
+        <nom><h1>Projecte FOL DAW</h1></nom>
+        <codi><h2>null</h2></codi>
+        <professor><h3>Montse Bermúdez</h3></professor>
+    </modul>
+</curs>

@@ -4,7 +4,7 @@
            xsi:noNamespaceSchemaLocation="../xsd/plantilla.xsd"
            nom="DAW1">
     <modul>
-        <nom><h1 class="sistemes">Sistemes Informatics</h1></nom>
+        <nom><h1>Sistemes Informatics</h1></nom>
         <codi><h2>M0483</h2></codi>
         <professor><h3>Ricard Pla</h3></professor>
         <temes>
@@ -32,7 +32,7 @@
     </modul>
     
     <modul>
-        <nom><h1 class="bases">Base de Dades</h1></nom>
+        <nom><h1>Base de Dades</h1></nom>
         <codi><h2>M0484</h2></codi>
         <professor><h3>Robert Ventura</h3></professor>
         <professor><h3>Adrià Saborido</h3></professor>
@@ -67,7 +67,7 @@
     </modul>
     
     <modul>
-        <nom><h1 class="prog">Programació</h1></nom>
+        <nom><h1>Programació</h1></nom>
         <codi><h2>M0485</h2></codi>
         <professor><h3>Pere Sanchez</h3></professor>
         <professor><h3>Xavier Martin</h3></professor>

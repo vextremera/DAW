@@ -9,7 +9,7 @@
                             <xs:element name="nom" type="xs:string"/>
                             <xs:element name="codi" type="xs:string"/>
                             <xs:element name="professor" type="xs:string" maxOccurs="2"/>
-                            <xs:element name="temes">
+                            <xs:element name="temes" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="tema" maxOccurs="unbounded">
