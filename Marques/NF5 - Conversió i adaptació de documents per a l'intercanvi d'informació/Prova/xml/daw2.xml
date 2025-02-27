@@ -7,25 +7,90 @@
         <nom><h1>Servidor</h1></nom>
         <codi><h2>M07</h2></codi>
         <professor><h3>Xavier Martin</h3></professor>
+        <temes>
+            <tema>
+                <titol><h4>UF1: Servidors web i de transferència de fitxers</h4></titol>
+                <descripcio><p>Instanciar arquitecturas i gestionar els servidors</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>UF2: Servidors d’aplicacions web</h4></titol>
+                <descripcio><p>Implanta aplicacions web en servidors d’aplicacions avaluant i aplicant criteris de configuració per al seu funcionament segur</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>UF3: Aplicacions web</h4></titol>
+                <descripcio><p>Verifica l’execució d’aplicacions web comprovant els paràmetres de configuració de serveis de xarxa</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>UF4: Control de versions i documentació</h4></titol>
+                <descripcio><p>Elabora la documentació de l’aplicació web avaluant i seleccionant eines de generació de documentació i control de versions</p></descripcio>
+            </tema>
+        </temes>
     </modul>
-     <modul>
+    <modul>
         <nom><h1>Interfícies</h1></nom>
         <codi><h2>M09</h2></codi>
         <professor><h3>XAinhoa Zaldua</h3></professor>
+        <temes>
+            <tema>
+                <titol><h4>UF1: Disseny de la interfície. Estils</h4></titol>
+                <descripcio><p>Planifica la creació d’una interfície web valorant i aplicant especificacions de disseny</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>UF2: Elements multimèdia. Creació i integració</h4></titol>
+                <descripcio><p>Prepara arxius multimèdia per al web, analitzant-ne les característiques i manejant eines específiques</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>UF3: Accessibilitat i usabilitat</h4></titol>
+                <descripcio><p>Desenvolupa interfícies web accessibles, analitzant les pautes establertes i aplicant-hi tècniques de verificació</p></descripcio>
+            </tema>
+        </temes>
     </modul>
-     <modul>
+    <modul>
         <nom><h1>Desplegament</h1></nom>
         <codi><h2>M08</h2></codi>
         <professor><h3>Àngel Bosch</h3></professor>
+        <temes>
+            <tema>
+                <titol><h4>UF1: Servidors web i de transferència de fitxers</h4></titol>
+                <descripcio><p>Implanta arquitectures web analitzant i aplicant criteris de funcionalitat</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>UF2: Servidors d’aplicacions web</h4></titol>
+                <descripcio><p>Implanta aplicacions web en servidors d’aplicacions avaluant i aplicant criteris de configuració per al seu funcionament segur</p></descripcio>
+            </tema>
+            <tema>
+                <titol><h4>UF3: Aplicacions web</h4></titol>
+                <descripcio><p>Verifica l’execució d’aplicacions web comprovant els paràmetres de configuració de serveis de xarxa</p></descripcio>
+            </tema>
+        </temes>
     </modul>
-     <modul>
+    <modul>
         <nom><h1>Projecte</h1></nom>
         <codi><h2>M12</h2></codi>
         <professor><h3>Pere Sánchez</h3></professor>
+        <temes>
+            <tema>
+                <titol><h4>UF1: Projecte de desenvolupament d’aplicacions web</h4></titol>
+                <descripcio><p>Identifica necessitats del sector productiu, relacionant-les amb projectes tipus que puguin satisfer-les</p></descripcio>
+            </tema>
+        </temes>
     </modul>
-     <modul>
+    <modul>
         <nom><h1>Projecte FOL DAW</h1></nom>
-        <codi><h2>null</h2></codi>
+        <codi><h2>M13</h2></codi>
         <professor><h3>Montse Bermúdez</h3></professor>
+        <temes>
+            <tema>
+                <titol><h4>DESCRIPCIÓ</h4></titol>
+                <descripcio><p>La FCT  es realitzarà amb empreses que dins les seves activitats es contemplin funcions corresponents al cicle, amb preferència amb les que es manté un conveni de col·laboració</p></descripcio>
+            </tema>
+        </temes>
+        <recursos>
+            <recurs>
+                <tipus><strong>Web</strong></tipus>
+                <nom><b>Currículums xtec</b></nom>
+                <enllac><a href="https://xtec.gencat.cat/ca/curriculum/professionals/fct/">Enllaç</a></enllac>
+            </recurs>
+        </recursos>
     </modul>
 </curs>
