@@ -6,27 +6,111 @@
         <carrec>Enginyera de programari</carrec>
         <departament>Desenvolupament</departament>
         <sou>2500</sou>
-        <anys>6</anys>
+        <data_contractacio>2023-03-15</data_contractacio>
     </empleat>
     <empleat>
         <nom>Marc Vila</nom>
         <carrec>Administrador de xarxes</carrec>
         <departament>Sistemes</departament>
         <sou>1800</sou>
-        <anys>4</anys>
+        <data_contractacio>2020-07-10</data_contractacio>
     </empleat>
     <empleat>
         <nom>Laura Ferrer</nom>
         <carrec>Analista de dades</carrec>
         <departament>Analítica</departament>
         <sou>2200</sou>
-        <anys>3</anys>
+        <data_contractacio>2021-01-05</data_contractacio>
     </empleat>
     <empleat>
         <nom>Jordi Soler</nom>
         <carrec>Cap de Projecte</carrec>
         <departament>Gestió</departament>
         <sou>3200</sou>
-        <anys>8</anys>
+        <data_contractacio>2015-06-25</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Carla Ruiz</nom>
+        <carrec>UX Designer</carrec>
+        <departament>Disseny</departament>
+        <sou>2800</sou>
+        <data_contractacio>2017-09-12</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Albert Gómez</nom>
+        <carrec>CEO</carrec>
+        <departament>Direcció</departament>
+        <sou>7500</sou>
+        <data_contractacio>2010-02-20</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Paula Riera</nom>
+        <carrec>Enginyera de Software</carrec>
+        <departament>Desenvolupament</departament>
+        <sou>3200</sou>
+        <data_contractacio>2024-06-30</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Roger Clavell</nom>
+        <carrec>Data Scientist</carrec>
+        <departament>Analítica</departament>
+        <sou>4600</sou>
+        <data_contractacio>2014-11-03</data_contractacio>
+    </empleat>
+        <empleat>
+        <nom>Agust Stevens</nom>
+        <carrec>Data Scientist</carrec>
+        <departament>Organizer</departament>
+        <sou>900</sou>
+        <data_contractacio>2021-12-11</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Marta Esteve</nom>
+        <carrec>HR Manager</carrec>
+        <departament>Recursos Humans</departament>
+        <sou>3500</sou>
+        <data_contractacio>2012-04-10</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>David Pons</nom>
+        <carrec>Desenvolupador Backend</carrec>
+        <departament>Desenvolupament</departament>
+        <sou>2700</sou>
+        <data_contractacio>2019-08-22</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Andrea Serra</nom>
+        <carrec>Consultora de Negoci</carrec>
+        <departament>Consultoria</departament>
+        <sou>4100</sou>
+        <data_contractacio>2013-03-19</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Jaume Vidal</nom>
+        <carrec>Arquitecte de Software</carrec>
+        <departament>Desenvolupament</departament>
+        <sou>5300</sou>
+        <data_contractacio>2021-05-14</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Elena Navarro</nom>
+        <carrec>Marketing Specialist</carrec>
+        <departament>Marketing</departament>
+        <sou>2900</sou>
+        <data_contractacio>2018-10-05</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Víctor Bosch</nom>
+        <carrec>Analista Financer</carrec>
+        <departament>Finances</departament>
+        <sou>3300</sou>
+        <data_contractacio>2016-07-27</data_contractacio>
+    </empleat>
+    <empleat>
+        <nom>Raquel Font</nom>
+        <carrec>CTO</carrec>
+        <departament>Direcció</departament>
+        <sou>7200</sou>
+        <data_contractacio>2009-12-01</data_contractacio>
     </empleat>
 </empleats>
