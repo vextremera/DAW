@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/empleats.xsl"?>
+<empleats>
+    <empleat>
+        <nom>Anna Puig</nom>
+        <carrec>Enginyera de programari</carrec>
+        <departament>Desenvolupament</departament>
+        <sou>2500</sou>
+        <anys>6</anys>
+    </empleat>
+    <empleat>
+        <nom>Marc Vila</nom>
+        <carrec>Administrador de xarxes</carrec>
+        <departament>Sistemes</departament>
+        <sou>1800</sou>
+        <anys>4</anys>
+    </empleat>
+    <empleat>
+        <nom>Laura Ferrer</nom>
+        <carrec>Analista de dades</carrec>
+        <departament>Analítica</departament>
+        <sou>2200</sou>
+        <anys>3</anys>
+    </empleat>
+    <empleat>
+        <nom>Jordi Soler</nom>
+        <carrec>Cap de Projecte</carrec>
+        <departament>Gestió</departament>
+        <sou>3200</sou>
+        <anys>8</anys>
+    </empleat>
+</empleats>
